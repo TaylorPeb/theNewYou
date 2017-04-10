@@ -1,2 +1,2 @@
-# theNewYou
-This is the New You website.
+# The New You
+## This is the repository for The New You website. The New You is an Ideal Protien diet that follows the rules to achieving and maintaining ketosis. Ketosis influences the body to burn fat as a common fuel source instead of carbohydrates to achive weight loss in a healthy manner without the need of exercise.
