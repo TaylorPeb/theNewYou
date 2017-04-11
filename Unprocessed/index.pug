@@ -1,44 +1,69 @@
 doctype html
 html
 	head
+		meta(name='viewport' content='width=device-width, initial-scale=1')
 		meta(charset="utf-8")
 		link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
 		link(href='stylesheets/styles.css', rel='stylesheet')
 		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
 	body
 		.container-fluid
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			#header.col-md-10.col-md-push-1.col-sm-12
-				#logo.col-md-2.col-sm-3
-					img(src='images/logo.png')
-				#menubar.col-lg-4.col-lg-push-6.col-md-5.col-md-push-5.col-sm-4.col-sm-push-6.col-xs-4
-					.menubutton
-						button ADVOCATES
-					.menubutton
-						button SCHEDULE
-					.menubutton
-						button INFO
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			#content.col-md-10.col-md-push-1.col-xs-12
-				#carousel.carousel.slide(data-ride='carousel').col-xs-12
-					.carousel-inner(role='listbox')
-							.carousel-item.active
-								img.d-block.img-fluid(src='...' alt="First slide")
-							.carousel-item
-								img.d-block.img-fluid(src='...' alt="Second slide")
-							.carousel-item
-								img.d-block.img-fluid(src='...' alt="Third slide")
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			#footer
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			.row
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				#header.col-md-10.col-md-push-1.col-sm-12
+					#logo.col-md-2.col-sm-3
+						img(src='images/logo.png')
+					#menubar.col-lg-4.col-lg-push-6.col-md-5.col-md-push-5.col-sm-4.col-sm-push-6.col-xs-4
+						.menubutton
+							button ADVOCATES
+						.menubutton
+							button SCHEDULE
+						.menubutton
+							button INFO
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				#content.col-md-10.col-md-push-1.col-xs-12
+					#carouselContainer.container-fluid
+						.row
+							.col-md-12
+									#carousel-example-generic.carousel.slide(data-ride='carousel')
+										ol.carousel-indicators
+											li.active(data-target='#carousel-example-generic', data-slide-to='0')
+											li(data-target='#carousel-example-generic', data-slide-to='1')
+											li(data-target='#carousel-example-generic', data-slide-to='2')
+										.carousel-inner
+											.item.active
+												img(src='...', alt='First slide')
+												.carousel-caption
+													h3 First Slide
+													p I like memes
+											.item
+												img(src='...', alt='First slide')
+												.carousel-caption
+													h3 First Slide
+													p I like memes
+											.item
+												img(src='...', alt='First slide')
+												.carousel-caption
+													h3 First Slide
+													p I like memes
+										a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+											span.glyphicon.glyphicon-chevron-left
+										a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+											span.glyphicon.glyphicon-chevron-right
+										.main-text.hidden-sm
+											.col-md-12.text-center
+												h1 Headline
+										//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+										//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
+										//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+										#footer
+										//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+										//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT~
+										//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		script(src='scripts/jquery-3.2.0.min.js')
 		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
 		script(src='scripts/scripts.js')

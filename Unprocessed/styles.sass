@@ -34,6 +34,8 @@ $font-stack: 'Raleway'
 		box-shadow: 0px 2px 9px 0px black
 		color: white
 		transition: 0s
+	&:focus
+		outline: 0
 #banner
 	background-color: #8bc34a
 	background: linear-gradient(to right,#8bc34a , white)
@@ -46,9 +48,15 @@ $font-stack: 'Raleway'
 #logo img
 //CONTENT BEGINS HERE
 #content
+	padding: 0
 	background-color: grey
 	z-index: 1
 	height: 25em
+#carouselContainer.container-fluid
+	padding: 0
+.row.col-md-12
+	padding: 0
+
 #carousel
 	padding: 0
 	margin: 0

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link href="stylesheets/styles.css" rel="stylesheet">
@@ -8,42 +9,75 @@
   </head>
   <body>
     <div class="container-fluid">
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div class="col-md-10 col-md-push-1 col-sm-12" id="header">
-        <div class="col-md-2 col-sm-3" id="logo"><img src="images/logo.png"></div>
-        <div class="col-lg-4 col-lg-push-6 col-md-5 col-md-push-5 col-sm-4 col-sm-push-6 col-xs-4" id="menubar">
-          <div class="menubutton">
-            <button>ADVOCATES</button>
+      <div class="row">
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="col-md-10 col-md-push-1 col-sm-12" id="header">
+          <div class="col-md-2 col-sm-3" id="logo"><img src="images/logo.png"></div>
+          <div class="col-lg-4 col-lg-push-6 col-md-5 col-md-push-5 col-sm-4 col-sm-push-6 col-xs-4" id="menubar">
+            <div class="menubutton">
+              <button>ADVOCATES</button>
+            </div>
+            <div class="menubutton">
+              <button>SCHEDULE</button>
+            </div>
+            <div class="menubutton">
+              <button>INFO</button>
+            </div>
           </div>
-          <div class="menubutton">
-            <button>SCHEDULE</button>
-          </div>
-          <div class="menubutton">
-            <button>INFO</button>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="col-md-10 col-md-push-1 col-xs-12" id="content">
+          <div class="container-fluid" id="carouselContainer">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="item active"><img src="..." alt="First slide">
+                      <div class="carousel-caption">
+                        <h3>First Slide</h3>
+                        <p>I like memes</p>
+                      </div>
+                    </div>
+                    <div class="item"><img src="..." alt="First slide">
+                      <div class="carousel-caption">
+                        <h3>First Slide</h3>
+                        <p>I like memes</p>
+                      </div>
+                    </div>
+                    <div class="item"><img src="..." alt="First slide">
+                      <div class="carousel-caption">
+                        <h3>First Slide</h3>
+                        <p>I like memes</p>
+                      </div>
+                    </div>
+                  </div><a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                  <div class="main-text hidden-sm">
+                    <div class="col-md-12 text-center">
+                      <h1>Headline</h1>
+                    </div>
+                  </div>
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                  <!--~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~-->
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                  <div id="footer"></div>
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                  <!--~JQUERY/BOOTSTRAP/JAVASCRIPT INIT~-->
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div class="col-md-10 col-md-push-1 col-xs-12" id="content">
-        <div class="carousel slide col-xs-12" id="carousel" data-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active"><img class="d-block img-fluid" src="..." alt="First slide"></div>
-            <div class="carousel-item"><img class="d-block img-fluid" src="..." alt="Second slide"></div>
-            <div class="carousel-item"><img class="d-block img-fluid" src="..." alt="Third slide"></div>
-          </div>
-        </div>
-      </div>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div id="footer"></div>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~JQUERY/BOOTSTRAP/JAVASCRIPT INIT~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     </div>
     <script src="scripts/jquery-3.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
