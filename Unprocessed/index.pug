@@ -6,32 +6,39 @@ html
 		link(href='stylesheets/styles.css', rel='stylesheet')
 		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
 	body
-		.container
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		#header.col-xs-10.col-xs-push-1
-			#logo.col-xs-2.col-xs-push-1
-				img(src='images/logo.png')
-			#menubar.col-md-4.col-sm-5.col-xs-4.col-sm-push-6.col-xs-push-6
-				.menubutton
-					button ADVOCATES
-				.menubutton
-					button SCHEDULE
-				.menubutton
-					button INFO
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		#content.col-xs-10.col-xs-push-1
-			#imageSlide
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		#footer
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT~
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		.container-fluid
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			#header.col-md-10.col-md-push-1.col-sm-12
+				#logo.col-md-2.col-sm-3
+					img(src='images/logo.png')
+				#menubar.col-lg-4.col-lg-push-6.col-md-5.col-md-push-5.col-sm-4.col-sm-push-6.col-xs-4
+					.menubutton
+						button ADVOCATES
+					.menubutton
+						button SCHEDULE
+					.menubutton
+						button INFO
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			#content.col-md-10.col-md-push-1.col-xs-12
+				#carousel.carousel.slide(data-ride='carousel').col-xs-12
+					.carousel-inner(role='listbox')
+							.carousel-item.active
+								img.d-block.img-fluid(src='...' alt="First slide")
+							.carousel-item
+								img.d-block.img-fluid(src='...' alt="Second slide")
+							.carousel-item
+								img.d-block.img-fluid(src='...' alt="Third slide")
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			#footer
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		script(src='scripts/jquery-3.2.0.min.js')
 		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
 		script(src='scripts/scripts.js')
