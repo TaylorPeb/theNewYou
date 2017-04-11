@@ -10,6 +10,19 @@ window.onload = function() {
     }
 }
 */
+
 $(document).ready(function() {
-	
+
+	$(".menubutton").mouseenter(function() {
+    	$(this).css({"z-index" : "900"});
+	});
+
+	$(".menubutton").mouseleave(function() {
+			var that=this;
+			setTimeout(function() {
+    			$(that).css({"z-index" : "0"});
+				console.log("meme")
+			}, 200);
+	});
+
 });

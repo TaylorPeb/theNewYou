@@ -1,7 +1,52 @@
 * {
+  font-family: "Raleway";
+  position: relative;
   margin: 0;
   padding: 0; }
 
 #header {
-  background-color: black;
+  padding: 0px;
+  z-index: 99;
+  overflow: hidden;
   height: 5em; }
+
+#menubar {
+  z-index: 99;
+  display: block; }
+
+.menubutton button {
+  font-size: 12;
+  float: left;
+  background-color: white;
+  border: none;
+  height: 5em;
+  width: 33.3%;
+  text-decoration: none;
+  transition: .5s; }
+  .menubutton button:hover {
+    background-color: #b3b3b3;
+    box-shadow: 0px 2px 9px 10px; }
+  .menubutton button:active {
+    background-color: black;
+    box-shadow: 0px 2px 9px 0px black;
+    color: white;
+    transition: 0s; }
+
+#banner {
+  background: white;
+  background: linear-gradient(to right, #8bc34a, white);
+  z-index: 97;
+  background-color: green;
+  height: 5em; }
+
+#logo {
+  z-index: 98;
+  margin: 8px; }
+
+#content {
+  background-color: grey;
+  z-index: 1;
+  height: 20em; }
+
+#imageSlide {
+  z-index: 1; }
