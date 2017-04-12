@@ -35,10 +35,8 @@
     outline: 0; }
 
 #banner {
-  background-color: #8bc34a;
-  background: linear-gradient(to right, #8bc34a, white);
+  background: linear-gradient(to right, #8bc34a, white, white);
   z-index: 1;
-  background-color: green;
   height: 5em; }
 
 #logo {
@@ -47,7 +45,7 @@
 
 #content {
   padding: 0;
-  background-color: grey;
+  background: grey;
   z-index: 1;
   height: 28em; }
 
@@ -62,5 +60,8 @@
   width: 31.7em;
   height: auto; }
 
-#imageSlide {
-  z-index: 1; }
+.carousel-caption h3 {
+  padding-bottom: 0em; }
+
+.carousel-caption p {
+  padding-bottom: 8em; }
