@@ -7,7 +7,6 @@
 * {
   font-family: "Raleway";
   position: relative;
-  margin: 0;
   padding: 0; }
 
 #header {
@@ -16,6 +15,17 @@
   z-index: 99;
   overflow: hidden;
   height: 5em; }
+
+#banner {
+  background: linear-gradient(to right, #8bc34a, #8bc34a, white);
+  z-index: 1;
+  height: 5em; }
+
+#logo {
+  z-index: 98; }
+
+#logo img {
+  margin: 0px; }
 
 #menudeskbar {
   z-index: 99;
@@ -41,15 +51,6 @@
     transition: 0s; }
   .menubutton button:focus {
     outline: 0; }
-
-#banner {
-  background: linear-gradient(to right, #8bc34a, #8bc34a, white, white);
-  z-index: 1;
-  height: 5em; }
-
-#logo {
-  z-index: 98;
-  margin: 8px; }
 
 #content {
   padding: 0;
@@ -86,11 +87,13 @@
     outline: 0; }
 
 .carousel-caption h3 {
-  text-shadow: 2px 2px 8px black;
-  padding-bottom: 0em; }
+  text-shadow: 2px 2px 8px black; }
 
 .carousel-caption p {
   text-shadow: 2px 2px 8px black; }
+
+#parallax {
+  height: 20em; }
 
 #map {
   background-color: black;

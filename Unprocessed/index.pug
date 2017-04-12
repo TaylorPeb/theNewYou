@@ -5,8 +5,8 @@ html
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 		meta(charset="utf-8")
 		link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
-		link(href='stylesheets/styles.css', rel='stylesheet')
-		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet')
+		link(href='css/styles.css', rel='stylesheet')
+		link(href='css/bootstrap.min.css' rel='stylesheet')
 	body
 		.container-fluid
 			.row
@@ -14,17 +14,18 @@ html
 				//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
 				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				#header.col-md-10.col-md-push-1.col-sm-12
-					#logo.col-md-2.col-sm-3
-						a(href='index.html')
-							img(src='images/logo.png' )
-					#menudeskbar.col-lg-4.col-lg-push-6.col-md-5.col-md-push-5.col-sm-4.col-sm-push-6.col-xs-4.hidden-sm.hidden-xs
-						.menubutton
-							button ADVOCATES
-						.menubutton
-							button SCHEDULE
-						.menubutton
-							button INFO
-					#banner
+					#banner.col-md-4
+						#logo.col-md-2.col-sm-3
+							a(href='index.html')
+								img(src='images/logo.png' )
+					.row
+						#menudeskbar.col-lg-4.col-lg-push-4.col-md-5.col-md-push-3.col-sm-4.col-sm-push-6.col-xs-4.hidden-sm.hidden-xs
+							.menubutton
+								button ADVOCATES
+							.menubutton
+								button SCHEDULE
+							.menubutton
+								button INFO
 				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 				//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
 				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,15 +48,16 @@ html
 												img(src='images/weightloss1.jpg', alt='First slide')
 												.carousel-caption
 													.col-lg-push-4.col-md-10.col-md-push-3
-														.carouselbutton 
+														.carouselbutton.hidden-sm.hidden-xs
 															button
 																h3 First Slide
 																h2 "Lorem ipsum Duis laboris dolore esse ex et magna nisi nisi culpa mollit velit officia velit magna."
 											.item
 												img(src='images/weightloss2.jpg', alt='Second slide')
 												.carousel-caption
+													.row
 													.col-lg-push-4.col-md-10.col-md-push-3
-														.carouselbutton
+														.carouselbutton.hidden-sm.hidden-xs
 															button 
 																h3 Second slide
 																h2 "Lorem ipsum Et pariatur elit elit esse sint dolore commodo consectetur ut non cupidatat."
@@ -63,7 +65,7 @@ html
 												img(src='images/weightloss3.jpg', alt='Third slide')
 												.carousel-caption
 													.col-lg-push-4.col-md-10.col-md-push-3
-														.carouselbutton 
+														.carouselbutton.hidden-sm.hidden-xs
 															button
 																h3 Third slide
 																h2 "Lorem ipsum Ad exercitation minim enim voluptate veniam pariatur ut cupidatat laborum sint Ut consequat sunt aliquip sit labore."
@@ -72,7 +74,10 @@ html
 										a.right.carousel-control(href='#maincarousel', data-slide='next')
 											span.glyphicon.glyphicon-chevron-right
 										.main-text.hidden-sm
-					#map.col-md-4.col-xs-12
+					.container-fluid
+						.row
+							#parallax.col-md-12
+							#map.col-md-4.col-xs-12
 										//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 										//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
 										//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,6 +86,6 @@ html
 		//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~
 		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&callback=initMap")
-		script(src='scripts/jquery-3.2.0.min.js')
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-		script(src='scripts/scripts.js')
+		script(src='js/jquery-3.2.0.min.js')
+		script(src='js/bootstrap.min.js')
+		script(src='js/scripts.js')

@@ -25,6 +25,8 @@ window.onload = function() {
 				console.log("meme")
 			}, 200);
 	});
+  //Tests mouse entering logo
+  //Tests mouse leaving logo
 
 });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -41,4 +43,3 @@ function initMap() {
           map: map
         });
       }
-console.log(initmap())
