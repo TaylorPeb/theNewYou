@@ -71,7 +71,7 @@
   text-decoration: none;
   border-radius: 40px;
   margin-bottom: 100px;
-  height: 10em;
+  height: auto;
   background-color: #e040fb;
   transition: 0.23s; }
   .carouselbutton button:hover {
@@ -82,14 +82,15 @@
     box-shadow: 0px 0px 9px 0px black inset;
     background-color: #A700C3;
     color: black; }
+  .carouselbutton button:focus {
+    outline: 0; }
 
 .carousel-caption h3 {
   text-shadow: 2px 2px 8px black;
   padding-bottom: 0em; }
 
 .carousel-caption p {
-  text-shadow: 2px 2px 8px black;
-  padding-bottom: 8em; }
+  text-shadow: 2px 2px 8px black; }
 
 #map {
   background-color: black;

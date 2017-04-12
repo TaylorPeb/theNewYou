@@ -1,6 +1,7 @@
 doctype html
 html
 	head
+		html(lang='en')
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 		meta(charset="utf-8")
 		link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
@@ -35,39 +36,40 @@ html
 						.row
 							.col-md-12
 								.row
-									#carousel-example-generic.carousel.slide(data-ride='carousel')
+									#maincarousel.carousel.slide(data-ride='carousel')
+										//CAROUSEL BUTTONS
 										ol.carousel-indicators
-											li.active(data-target='#carousel-example-generic', data-slide-to='0')
-											li(data-target='#carousel-example-generic', data-slide-to='1')
-											li(data-target='#carousel-example-generic', data-slide-to='2')
+											li.active(data-target='#maincarousel', data-slide-to='0')
+											li(data-target='#maincarousel', data-slide-to='1')
+											li(data-target='#maincarousel', data-slide-to='2')
 										.carousel-inner
 											.item.active
 												img(src='images/weightloss1.jpg', alt='First slide')
 												.carousel-caption
-													.col-md-10.col-md-push-3
+													.col-lg-push-4.col-md-10.col-md-push-3
 														.carouselbutton 
 															button
 																h3 First Slide
-																p "Lorem ipsum Ut minim in dolor consequat ut dolor mollit tempor laboris dolore consequat fugiat tempor irure sint esse in occaecat anim in eiusmod exercitation dolor deserunt irure magna voluptate nostrud laboris proident et ex."
+																h2 "Lorem ipsum Duis laboris dolore esse ex et magna nisi nisi culpa mollit velit officia velit magna."
 											.item
 												img(src='images/weightloss2.jpg', alt='Second slide')
 												.carousel-caption
-													.col-md-10.col-md-push-3
+													.col-lg-push-4.col-md-10.col-md-push-3
 														.carouselbutton
 															button 
 																h3 Second slide
-																p "Lorem ipsum Incididunt amet velit reprehenderit velit occaecat tempor reprehenderit dolore magna est nostrud dolor do amet est ea amet laboris anim in ullamco esse cillum tempor proident sint proident incididunt pariatur non in amet cupidatat labore."
+																h2 "Lorem ipsum Et pariatur elit elit esse sint dolore commodo consectetur ut non cupidatat."
 											.item
 												img(src='images/weightloss3.jpg', alt='Third slide')
 												.carousel-caption
-													.col-md-10.col-md-push-3
+													.col-lg-push-4.col-md-10.col-md-push-3
 														.carouselbutton 
 															button
 																h3 Third slide
-																p "Lorem ipsum Nisi et velit anim incididunt nostrud tempor sint consectetur consectetur cillum et do pariatur sint enim pariatur mollit in Ut nisi Excepteur sunt irure et dolore nostrud aliqua veniam reprehenderit labore sed fugiat sunt aute in non."
-										a.left.carousel-control(href='#carousel-example-generic', data-slide='prev')
+																h2 "Lorem ipsum Ad exercitation minim enim voluptate veniam pariatur ut cupidatat laborum sint Ut consequat sunt aliquip sit labore."
+										a.left.carousel-control(href='#maincarousel', data-slide='prev')
 											span.glyphicon.glyphicon-chevron-left
-										a.right.carousel-control(href='#carousel-example-generic', data-slide='next')
+										a.right.carousel-control(href='#maincarousel', data-slide='next')
 											span.glyphicon.glyphicon-chevron-right
 										.main-text.hidden-sm
 					#map.col-md-4.col-xs-12
