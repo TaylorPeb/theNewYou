@@ -1,5 +1,9 @@
 $font-stack: 'Raleway'
 
+.span
+	background: #000000
+.span.span
+	background: black
 
 *
 	font-family: $font-stack
@@ -9,11 +13,12 @@ $font-stack: 'Raleway'
 
 //HEADER BEGINS HERE
 #header
+	box-shadow: 0 6px 4px -3px black
 	padding: 0px
 	z-index: 99
 	overflow: hidden
 	height: 5em
-#menubar
+#menudeskbar
 	z-index: 99
 	display: block
  
@@ -51,8 +56,9 @@ $font-stack: 'Raleway'
 	background: #8bc34a
 	z-index: 1
 	height: 28em
-#carouselContainer.container-fluid
-	padding: 0
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #carousel
 	padding: 0
@@ -69,7 +75,7 @@ $font-stack: 'Raleway'
 	margin-bottom: 100px
 	height: 10em
 	background-color: #e040fb
-	transition: 0.5s
+	transition: 0.23s
 	&:hover
 		box-shadow: 0px 0px 9px 0px black
 		background-color: #E966FF
@@ -84,6 +90,12 @@ $font-stack: 'Raleway'
 .carousel-caption p
 	text-shadow: 2px 2px 8px black
 	padding-bottom: 8em
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~MAPS BEGINS HERE~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#map
+	background-color: black 
+	height: 20em
 
 //FOOTER BEGINS HERE
 #footer
