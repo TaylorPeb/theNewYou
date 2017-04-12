@@ -24,8 +24,9 @@
   text-decoration: none;
   transition: .5s; }
   .menubutton button:hover {
-    background-color: #b3b3b3;
-    box-shadow: 0px 2px 9px 10px; }
+    background-color: #656565;
+    box-shadow: 0px 2px 9px 10px;
+    color: #9DDD52; }
   .menubutton button:active {
     background-color: black;
     box-shadow: 0px 2px 9px 0px black;
@@ -35,7 +36,7 @@
     outline: 0; }
 
 #banner {
-  background: linear-gradient(to right, #8bc34a, white, white);
+  background: linear-gradient(to right, #8bc34a, #8bc34a, white, white);
   z-index: 1;
   height: 5em; }
 
@@ -45,7 +46,7 @@
 
 #content {
   padding: 0;
-  background: grey;
+  background: #8bc34a;
   z-index: 1;
   height: 28em; }
 
@@ -60,8 +61,28 @@
   width: 31.7em;
   height: auto; }
 
+.carouselbutton button {
+  box-shadow: 5px 5px 8px 1px black;
+  border: none;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 100px;
+  height: 10em;
+  background-color: #e040fb;
+  transition: 0.5s; }
+  .carouselbutton button:hover {
+    box-shadow: 0px 0px 9px 0px black;
+    background-color: #E966FF; }
+  .carouselbutton button:active {
+    transition: 0s;
+    box-shadow: 0px 0px 9px 0px black inset;
+    background-color: #A700C3;
+    color: black; }
+
 .carousel-caption h3 {
+  text-shadow: 2px 2px 8px black;
   padding-bottom: 0em; }
 
 .carousel-caption p {
+  text-shadow: 2px 2px 8px black;
   padding-bottom: 8em; }

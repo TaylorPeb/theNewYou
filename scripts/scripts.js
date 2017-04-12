@@ -11,7 +11,7 @@ window.onload = function() {
 }
 */
 
-$(document).ready(function() {
+ $(document).ready(function() {
 
 	$(".menubutton").mouseenter(function() {
     	$(this).css({"z-index" : "900"});
