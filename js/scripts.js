@@ -25,8 +25,18 @@ window.onload = function() {
 				console.log("meme")
 			}, 200);
 	});
-  //Tests mouse entering logo
-  //Tests mouse leaving logo
+  //Parllax scrolling Effect
+  $(window).scroll(function(){
+
+    var wScroll = $(this).scrollTop();
+
+    $('.paraText h1').css({
+      'transform' : 'translate (0px, '+ wScroll /2 +'%)'
+    });
+    
+    console.log(wScroll);
+
+  });
 
 });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~

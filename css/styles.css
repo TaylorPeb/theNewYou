@@ -22,7 +22,11 @@
   height: 5em; }
 
 #logo {
+  transition: 0.3s ease;
   z-index: 98; }
+  #logo:hover {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); }
 
 #logo img {
   margin: 0px; }
@@ -43,26 +47,30 @@
   .menubutton button:hover {
     background-color: #656565;
     box-shadow: 0px 2px 9px 10px;
-    color: #9DDD52; }
+    color: #c34a8b; }
   .menubutton button:active {
     background-color: black;
     box-shadow: 0px 2px 9px 0px black;
-    color: white;
+    color: #8bc34a;
     transition: 0s; }
   .menubutton button:focus {
     outline: 0; }
 
 #content {
   padding: 0;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url("http://trichilofoods.com/site/wp-content/uploads/2015/06/veggies.jpg");
   z-index: 1;
   height: 28em; }
+
+#carouselContainer {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url(../images/food2.jpg);
+  background-position: 20%;
+  background-size: 120%; }
 
 .carousel-indicators li {
   border-color: black !important; }
 
 .carousel-indicators .active {
-  background-color: #8bc34a !important; }
+  background-color: #c34a8b !important; }
 
 .item img {
   width: 31.7em;
@@ -72,8 +80,6 @@
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   border: none;
   text-decoration: none;
-  border-radius: 5px;
-  margin-bottom: 100px;
   height: auto;
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
@@ -100,8 +106,18 @@
 .carousel-caption p {
   text-shadow: 2px 2px 8px black; }
 
-#parallax {
-  height: 20em; }
+.parallax {
+  height: 20em;
+  background-image: url(../images/cake.jpg);
+  background-size: contain;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top: 20%; }
+
+#paraText h1 {
+  font-size: 800%;
+  text-align: center; }
 
 #map {
   background-color: black;
