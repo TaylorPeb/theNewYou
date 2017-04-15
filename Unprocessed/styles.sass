@@ -1,10 +1,5 @@
 $font-stack: 'Raleway'
 
-.span
-	background: #000000
-.span.span
-	background: black
-
 *
 	font-family: $font-stack
 	position: relative
@@ -38,7 +33,7 @@ $font-stack: 'Raleway'
 	background-color: white
 	border: none
 	height: 5em
-	width: 33.3%
+	width: 25%
 	text-decoration: none
 	transition: .5s
 	&:hover
@@ -112,13 +107,16 @@ $font-stack: 'Raleway'
 		size: contain
 		position: top center
 		attachment: fixed
-		repeat: no-repeat
+		background-repeat: no-repeat
 	top: 20%
+	padding-bottom: 10em 
 	margin-top:
-#paraText
+.paraText
 	h1
+		position: absolute
 		font-size: 800%
 		text-align: center
+		z-index: 1
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~MAPS BEGINS HERE~~~~~~~~~~~~
@@ -126,6 +124,10 @@ $font-stack: 'Raleway'
 #map
 	background-color: black 
 	height: 20em
-
+#ownerInfo
+	height: 20em
+	background-color: green
 //FOOTER BEGINS HERE
 #footer
+#test
+	height: 20em

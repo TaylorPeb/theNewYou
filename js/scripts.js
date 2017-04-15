@@ -17,6 +17,7 @@ window.onload = function() {
 	$(".menubutton").mouseenter(function() {
     	$(this).css({"z-index" : "900"});
 	});
+
   //Tests mouse leaving menubutton
 	$(".menubutton").mouseleave(function() {
 			var that=this;
@@ -25,17 +26,15 @@ window.onload = function() {
 				console.log("meme")
 			}, 200);
 	});
+
   //Parllax scrolling Effect
   $(window).scroll(function(){
 
     var wScroll = $(this).scrollTop();
 
-    $('.paraText h1').css({
-      'transform' : 'translate (0px, '+ wScroll /2 +'%)'
+    $('.paraText').css({
+      'transform' : 'translate(0px, '+ wScroll /1 +'%)'
     });
-    
-    console.log(wScroll);
-
   });
 
 });
