@@ -13,10 +13,23 @@ window.onload = function() {
 
  $(document).ready(function() {
 
+
+ //retrieves window height
+
+
+setInterval(function(){
+
+  var windowH = window.innerHeight;
+  var windowL = window.innerWidth;
+  $(".item img").css({"height" : windowH});
+  $(".item img").css({"width" : "auto"});
+  console.log(windowH);
+}, 1000);
   //Tests mouse entering menubutton
 	$(".menubutton").mouseenter(function() {
     	$(this).css({"z-index" : "900"});
 	});
+
 
   //Tests mouse leaving menubutton
 	$(".menubutton").mouseleave(function() {
@@ -38,9 +51,9 @@ window.onload = function() {
   });
 
 });
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~GOOGLE MAPS INIT~~~~~
-
 function initMap() {
         var uluru = {lat: 48.2417233, lng: -122.3610419};
         var map = new google.maps.Map(document.getElementById('map'), {
