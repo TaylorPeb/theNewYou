@@ -19,12 +19,12 @@ window.onload = function() {
 
 setInterval(function(){
 
-  var windowH = window.innerHeight;
+  var windowH = window.innerHeight - 71;
   var windowL = window.innerWidth;
   $(".item img").css({"height" : windowH});
   $(".item img").css({"width" : "auto"});
   console.log(windowH);
-}, 1000);
+}, 600);
   //Tests mouse entering menubutton
 	$(".menubutton").mouseenter(function() {
     	$(this).css({"z-index" : "900"});
