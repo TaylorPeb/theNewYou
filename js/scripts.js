@@ -10,7 +10,6 @@ window.onload = function() {
     }
 }
 */
-
  $(document).ready(function() {
 
 
@@ -36,11 +35,11 @@ setInterval(function(){
 			var that=this;
 			setTimeout(function() {
     			$(that).css({"z-index" : "0"});
-				console.log("meme")
+				console.log("meme");
 			}, 200);
 	});
 
-  //Parllax scrolling Effect
+/*  //Parllax scrolling Effect
   $(window).scroll(function(){
 
     var wScroll = $(this).scrollTop();
@@ -49,11 +48,12 @@ setInterval(function(){
       'transform' : 'translate(0px, '+ wScroll /1 +'%)'
     });
   });
-
+*/
 });
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~GOOGLE MAPS INIT~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~
 function initMap() {
         var uluru = {lat: 48.2417233, lng: -122.3610419};
         var map = new google.maps.Map(document.getElementById('map'), {

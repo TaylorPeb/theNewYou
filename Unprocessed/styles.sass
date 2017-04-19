@@ -14,7 +14,7 @@ $font-stack: 'Raleway'
 	z-index: 99
 	overflow: hidden
 	height: 5em
-#banner
+//-#banner
 	background: linear-gradient(to right,#8bc34a,#8bc34a, white)
 	z-index: 1
 	height: 5em
@@ -28,8 +28,25 @@ $font-stack: 'Raleway'
 #menudeskbar
 	z-index: 99
 	display: block
+.menubutton
+	float: left
+	width: 20%
+.menubutton a
+	color:  black
+
+.menubutton a button
+	background-color: white
+	width: 100%
+	height: 5em
+	transition: 0.5s
+	border: none
+	&:focus
+	&:hover
+		background-color: #656565
+		box-shadow: 0px 2px 9px 2px black inset
+		color:  #c34a8b
  
-.menubutton button
+//-.menubutton a button
 	font-size: 12
 	float: left
 	background-color: white
@@ -40,7 +57,7 @@ $font-stack: 'Raleway'
 	transition: .5s
 	&:hover
 		background-color: #656565
-		box-shadow: 0px 2px 9px 10px #c34a8b
+		box-shadow: 0px 2px 9px 2px black inset
 		color:  #c34a8b
 	&:active
 		background-color: black 
@@ -49,6 +66,7 @@ $font-stack: 'Raleway'
 		transition: 0s
 	&:focus
 		outline: 0
+//-.menubutton a
 //-CONTENT BEGINS HERE
 #content
     padding: 0
@@ -106,7 +124,7 @@ $font-stack: 'Raleway'
 #parallax
 	height: 20em
 	background:
-		image: url(../images/cake.jpg)
+		image: url(../images/IPFood.jpg)
 		size: contain
 		position: top center
 		attachment: fixed
@@ -116,7 +134,8 @@ $font-stack: 'Raleway'
 	margin-top:
 .paraText
 	h1
-		position: absolute
+		color: white
+		margin-left: 10%
 		font-size: 800%
 		text-align: center
 		z-index: 1
@@ -132,9 +151,9 @@ $font-stack: 'Raleway'
 	box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.5) inset
 	height: 40em
 	background-color: white
-#ownerPic h1
-	background-color: 
-	text-align: center
+#ownerPic img
+	width: 30em
+	height: auto
 #ownerInfo
 	height: 40em
 	background-color: green

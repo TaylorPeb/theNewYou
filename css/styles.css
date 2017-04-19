@@ -12,11 +12,6 @@
   overflow: hidden;
   height: 5em; }
 
-#banner {
-  background: linear-gradient(to right, #8bc34a, #8bc34a, white);
-  z-index: 1;
-  height: 5em; }
-
 #logo {
   transition: 0.3s ease;
   z-index: 98; }
@@ -31,26 +26,23 @@
   z-index: 99;
   display: block; }
 
-.menubutton button {
-  font-size: 12;
+.menubutton {
   float: left;
+  width: 20%; }
+
+.menubutton a {
+  color: black; }
+
+.menubutton a button {
   background-color: white;
-  border: none;
+  width: 100%;
   height: 5em;
-  width: 20%;
-  text-decoration: none;
-  transition: .5s; }
-  .menubutton button:hover {
+  transition: 0.5s;
+  border: none; }
+  .menubutton a button:hover {
     background-color: #656565;
-    box-shadow: 0px 2px 9px 10px #c34a8b;
+    box-shadow: 0px 2px 9px 2px black inset;
     color: #c34a8b; }
-  .menubutton button:active {
-    background-color: black;
-    box-shadow: 0px 2px 9px 0px #8bc34a;
-    color: #8bc34a;
-    transition: 0s; }
-  .menubutton button:focus {
-    outline: 0; }
 
 #content {
   padding: 0;
@@ -103,7 +95,7 @@
 
 #parallax {
   height: 20em;
-  background-image: url(../images/cake.jpg);
+  background-image: url(../images/IPFood.jpg);
   background-size: contain;
   background-position: top center;
   background-attachment: fixed;
@@ -112,7 +104,8 @@
   padding-bottom: 10em; }
 
 .paraText h1 {
-  position: absolute;
+  color: white;
+  margin-left: 10%;
   font-size: 800%;
   text-align: center;
   z-index: 1; }
@@ -127,8 +120,9 @@
   height: 40em;
   background-color: white; }
 
-#ownerPic h1 {
-  text-align: center; }
+#ownerPic img {
+  width: 30em;
+  height: auto; }
 
 #ownerInfo {
   height: 40em;
