@@ -3,28 +3,31 @@
   position: relative;
   padding: 0; }
 
+body {
+  background-image: url("http://www.seattleweightlossandwellness.com/wp-content/uploads/2012/10/seattle-background1.jpg");
+  background-attachment: fixed; }
+
 #header {
   background-color: white;
   position: fixed;
-  box-shadow: 0 6px 4px -3px black;
+  box-shadow: 0 3px 4px -2px black;
   padding: 0px;
   z-index: 99;
   overflow: hidden;
   height: 5em; }
 
+#menudeskbar {
+  padding: 0; }
+
 #logo {
+  padding-top: 7px;
   transition: 0.3s ease;
-  z-index: 98; }
+  z-index: 98;
+  z-index: 99;
+  display: block; }
   #logo:hover {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); }
-
-#logo img {
-  margin: 0px; }
-
-#menudeskbar {
-  z-index: 99;
-  display: block; }
 
 .menubutton {
   float: left;
@@ -45,13 +48,11 @@
     color: #c34a8b; }
 
 #content {
-  padding: 0;
-  z-index: 1; }
+  background-color: white;
+  margin-top: 5em;
+  padding: 0; }
 
 #carouselContainer {
-  margin-top: 5em; }
-
-#carouselBG {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url(../images/food2.jpg);
   background-position: 20%;
   background-size: 120%; }
@@ -63,8 +64,7 @@
   background-color: #c34a8b !important; }
 
 .item img {
-  width: 50em;
-  height: auto; }
+  margin: auto; }
 
 .carouselbutton button {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -93,41 +93,25 @@
 .carousel-caption h3 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
 
-#parallax {
-  height: 20em;
-  background-image: url(../images/IPFood.jpg);
-  background-size: contain;
-  background-position: top center;
-  background-attachment: fixed;
-  background-background-repeat: no-repeat;
-  top: 20%;
-  padding-bottom: 10em; }
-
-.paraText h1 {
-  color: white;
-  margin-left: 10%;
-  font-size: 800%;
-  text-align: center;
-  z-index: 1; }
+#dietInfo {
+  padding: 2em;
+  display: flexbox; }
 
 #map {
   background-color: black;
   height: 20em;
   width: 31.7em; }
 
-#ownerPic {
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5) inset;
-  height: 40em;
-  background-color: white; }
-
-#ownerPic img {
-  width: 30em;
-  height: auto; }
-
-#ownerInfo {
-  height: 40em;
-  background-color: green; }
-
 #footer {
-  border-top: 1px solid black;
-  height: 10em; }
+  background-color: grey;
+  height: 30em; }
+
+#footer table {
+  margin: 0 auto; }
+  #footer table thead tr {
+    text-align: center; }
+    #footer table thead tr th {
+      text-align: center; }
+
+.bgShadow {
+  box-shadow: 0px 2px 9px 2px black; }

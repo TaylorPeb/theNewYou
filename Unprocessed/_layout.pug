@@ -1,0 +1,55 @@
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+		html(lang='en')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		meta(charset="utf-8")
+		link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
+		link(href='css/styles.css', rel='stylesheet')
+		link(href='css/bootstrap.min.css' rel='stylesheet')
+	body
+		.container-fluid
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			.row
+					#header.col-md-10.col-md-push-1.col-xs-10.col-xs-push-1
+						//-#banner.col-md-4.col-xs-4
+						#logo.col-md-2.col-sm-3
+								a(href='index.html')
+									img(src='images/logo.png' )
+						#menumobilebar.hidden-lg.hidden-md
+							p meme
+						#menudeskbar.col-md-6.col-md-push-4.col-sm-5.col-sm-push-3.col-xs-6.col-xs-push-2.hidden-sm.hidden-xs
+							.menubutton 
+								a(href="index.html") 
+									button HOME
+							.menubutton
+								a(href="advocates.html") 
+									button ADVOCATES
+							.menubutton
+								a(href="contact.html")
+									button CONTACT
+							.menubutton
+								a(href="schedule.html")
+									button SCHEDULE
+							.menubutton 
+								a(href="register.html") 
+									button REGISTER
+			block content
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			.row 
+				#footer.col-xs-10.col-xs-push-1
+					table
+						thead
+							tr
+								th.col-md-1 ABOUT
+								th.col-md-1 RESOURCES
+								th.col-md-1 SOCIAL
+							tr
+								td 
+								td
+								td FACEBOOK

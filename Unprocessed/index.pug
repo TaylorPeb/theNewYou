@@ -1,115 +1,64 @@
-doctype html
-html
-	head
-		html(lang='en')
-		meta(name='viewport' content='width=device-width, initial-scale=1')
-		meta(charset="utf-8")
-		link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
-		link(href='css/styles.css', rel='stylesheet')
-		link(href='css/bootstrap.min.css' rel='stylesheet')
-	body
-		.container-fluid
+extends _layout.pug
+block content
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	.row
+		#content.col-md-10.col-md-push-1.col-xs-10.col-xs-push-1
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~CAROUSEL~~~~~~~~~~~~~
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			.row
-				#header.col-md-12.col-sm-12
-					//-#banner.col-md-4.col-xs-4
-					#logo.col-md-2.col-md-push-2.col-sm-3
-						a(href='index.html')
-							img(src='images/logo.png' )
-					#menudeskbar.col-lg-5.col-lg-push-2.col-md-6.col-md-push-3.col-sm-5.col-sm-push-3.col-xs-6.col-xs-push-2.hidden-sm.hidden-xs
-						.menubutton 
-							a(href="index.html") 
-								button HOME
-						.menubutton
-							a(href="advocates.html") 
-								button ADVOCATES
-						.menubutton
-							a(href="contact.html")
-								button CONTACT
-						.menubutton
-							a(href="info.html")
-								button INFO
-						.menubutton
-							a(href="schedule.html")
-								button SCHEDULE
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				#carouselContainer
+					.col-md-10.col-md-push-1
+						.row
+					#mainCarousel.carousel.slide(data-ride='carousel')
+						//CAROUSEL BUTTONS
+						ol.carousel-indicators
+							li.active(data-target='#mainCarousel', data-slide-to='0')
+							li(data-target='#mainCarousel', data-slide-to='1')
+							li(data-target='#mainCarousel', data-slide-to='2')
+						.carousel-inner
+							.item.active
+								img(src='images/weightloss1.jpg', alt='First slide')
+								.carousel-caption
+									.carouselbutton.hidden-sm.hidden-xs
+										button
+											h3 First Slide
+											h2 "Lorem ipsum Duis laboris dolore esse ex et magna nisi nisi culpa mollit velit officia velit magna."
+							.item
+								img(src='images/weightloss2.jpg', alt='Second slide')
+								.carousel-caption
+									.carouselbutton.hidden-sm.hidden-xs
+										button 
+											h3 Second slide
+											h2 "Lorem ipsum Et pariatur elit elit esse sint dolore commodo consectetur ut non cupidatat."
+							.item
+								img(src='images/weightloss3.jpg', alt='Third slide')
+								.carousel-caption
+									.carouselbutton.hidden-sm.hidden-xs
+										button
+											h3 Third slide
+											h2 "Lorem ipsum Ad exercitation minim enim voluptate veniam pariatur ut cupidatat laborum sint Ut consequat sunt aliquip sit labore."
+						a.left.carousel-control(href='#mainCarousel', data-slide='prev')
+							span.glyphicon.glyphicon-chevron-left
+						a.right.carousel-control(href='#mainCarousel', data-slide='next')
+							span.glyphicon.glyphicon-chevron-right
 			.row
-				#content.col-md-12.col-xs-12
-					//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-					//~~~~~~~~~~~~~~CAROUSEL~~~~~~~~~~~~~
-					//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-					.container-fluid
-						.row
-							#carouselContainer
-							#carouselBG
-									.col-md-12
-										.row
-									#maincarousel.carousel.slide(data-ride='carousel')
-										//CAROUSEL BUTTONS
-										ol.carousel-indicators
-											li.active(data-target='#maincarousel', data-slide-to='0')
-											li(data-target='#maincarousel', data-slide-to='1')
-											li(data-target='#maincarousel', data-slide-to='2')
-										.carousel-inner
-											.item.active
-												img(src='images/weightloss1.jpg', alt='First slide')
-												.carousel-caption
-													.col-lg-push-4.col-md-9.col-md-push-3
-													.carouselbutton.hidden-sm.hidden-xs
-														button
-															h3 First Slide
-															h2 "Lorem ipsum Duis laboris dolore esse ex et magna nisi nisi culpa mollit velit officia velit magna."
-											.item
-												img(src='images/weightloss2.jpg', alt='Second slide')
-												.carousel-caption
-													.col-lg-push-4.col-md-9.col-md-push-3
-													.carouselbutton.hidden-sm.hidden-xs
-														button 
-															h3 Second slide
-															h2 "Lorem ipsum Et pariatur elit elit esse sint dolore commodo consectetur ut non cupidatat."
-											.item
-												img(src='images/weightloss3.jpg', alt='Third slide')
-												.carousel-caption
-													.col-lg-push-4.col-md-9.col-md-push-3
-													.carouselbutton.hidden-sm.hidden-xs
-														button
-															h3 Third slide
-															h2 "Lorem ipsum Ad exercitation minim enim voluptate veniam pariatur ut cupidatat laborum sint Ut consequat sunt aliquip sit labore."
-										a.left.carousel-control(href='#maincarousel', data-slide='prev')
-											span.glyphicon.glyphicon-chevron-left
-										a.right.carousel-control(href='#maincarousel', data-slide='next')
-											span.glyphicon.glyphicon-chevron-right
-						//-.row
-							//-#map.col-md-4
-							#ownerPic.col-xs-4
-								img(src="images/ownerAfter.jpg")
-							#ownerInfo.col-xs-8
-								h1 About the owner
-						.row
-							#parallax.col-md-12
-								.paraText
-									h1 Schedule today!
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			.row 
-				#footer.col-xs-12
-					#information
-						ul.col-xs-12
-							li ABOUT
-							li RESOURCES
-							li SOCIAL
-								li Facebook
-								li Instagram
-								li Facebook
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&callback=initMap")
-		script(src='js/jquery-3.2.0.min.js')
-		script(src='js/bootstrap.min.js')
-		script(src='js/scripts.js')
+				#dietInfo.col-xs-12
+					#cell1.col-md-4
+						h2 What is Ideal Protien?
+						h4 Ut magna mollit ut non non dolore ut nisi sint est laborum pariatur esse fugiat aliqua occaecat ut anim non elit duis in fugiat occaecat nostrud sint consequat non ea ea cillum ut amet aliquip adipisicing dolore adipisicing.
+					#cell2.col-md-4
+						h2 
+						h4 Aliqua ex sunt officia laborum aute esse exercitation mollit elit consectetur ut anim laboris eu reprehenderit sit laborum consectetur dolor non esse ex laborum dolor laboris sint esse veniam velit exercitation non in aute laborum consectetur adipisicing est.tempor.
+					#cell3.col-md-4
+						h2 What is Ideal Protien?
+						h4 Esse fugiat labore sit ex in cillum nostrud voluptate incididunt enim cillum qui nisi pariatur ut sit nisi proident deserunt qui consectetur aliqua non quis duis dolor velit est mollit adipisicing proident.
+	//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//-~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~
+	//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&callback=initMap")
+	script(src='js/jquery-3.2.0.min.js')
+	script(src='js/bootstrap.min.js')
+	script(src='js/scripts.js')

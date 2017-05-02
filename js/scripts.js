@@ -15,29 +15,16 @@ window.onload = function() {
 
  //retrieves window height
 
-
+/*
 setInterval(function(){
 
   var windowH = window.innerHeight - 71;
   var windowL = window.innerWidth;
-  $(".item img").css({"height" : windowH});
-  $(".item img").css({"width" : "auto"});
+  $(".img-wrapper").css({"height" : windowH});
+  $(".img-wrapper").css({"width" : "auto\9"});
   console.log(windowH);
 }, 600);
-  //Tests mouse entering menubutton
-	$(".menubutton").mouseenter(function() {
-    	$(this).css({"z-index" : "900"});
-	});
-
-
-  //Tests mouse leaving menubutton
-	$(".menubutton").mouseleave(function() {
-			var that=this;
-			setTimeout(function() {
-    			$(that).css({"z-index" : "0"});
-				console.log("meme");
-			}, 200);
-	});
+*/
 
 /*  //Parllax scrolling Effect
   $(window).scroll(function(){

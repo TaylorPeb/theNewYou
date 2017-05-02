@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <html lang="en"></html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -14,19 +15,22 @@
       <!--~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~-->
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <div class="row">
-        <div class="col-md-12 col-sm-12" id="header">
-          <div class="col-md-2 col-md-push-2 col-sm-3" id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-          <div class="col-lg-5 col-lg-push-2 col-md-6 col-md-push-3 col-sm-5 col-sm-push-3 col-xs-6 col-xs-push-2 hidden-sm hidden-xs" id="menudeskbar">
+        <div class="col-md-10 col-md-push-1 col-xs-10 col-xs-push-1" id="header">
+          <div class="col-md-2 col-sm-3" id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <div class="hidden-lg hidden-md" id="menumobilebar">
+            <p>meme</p>
+          </div>
+          <div class="col-md-6 col-md-push-4 col-sm-5 col-sm-push-3 col-xs-6 col-xs-push-2 hidden-sm hidden-xs" id="menudeskbar">
             <div class="menubutton"> <a href="index.html"> 
                 <button>HOME</button></a></div>
             <div class="menubutton"><a href="advocates.html"> 
                 <button>ADVOCATES</button></a></div>
             <div class="menubutton"><a href="contact.html">
                 <button>CONTACT</button></a></div>
-            <div class="menubutton"><a href="info.html">
-                <button>INFO</button></a></div>
             <div class="menubutton"><a href="schedule.html">
                 <button>SCHEDULE</button></a></div>
+            <div class="menubutton"> <a href="register.html"> 
+                <button>REGISTER</button></a></div>
           </div>
         </div>
       </div>
@@ -34,97 +38,100 @@
       <!--~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~-->
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <div class="row">
-        <div class="col-md-12 col-xs-12" id="content">
+        <div class="col-md-10 col-md-push-1 col-xs-10 col-xs-push-1" id="content">
           <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <!--~~~~~~~~~~~~~~CAROUSEL~~~~~~~~~~~~~-->
           <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-          <div class="container-fluid">
-            <div class="row">
-              <div id="carouselContainer"></div>
-              <div id="carouselBG">
-                <div class="col-md-12">
-                  <div class="row"></div>
-                </div>
-                <div class="carousel slide" id="maincarousel" data-ride="carousel">
-                  <!--CAROUSEL BUTTONS-->
-                  <ol class="carousel-indicators">
-                    <li class="active" data-target="#maincarousel" data-slide-to="0"></li>
-                    <li data-target="#maincarousel" data-slide-to="1"></li>
-                    <li data-target="#maincarousel" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active"><img src="images/weightloss1.jpg" alt="First slide">
-                      <div class="carousel-caption">
-                        <div class="col-lg-push-4 col-md-9 col-md-push-3"></div>
-                        <div class="carouselbutton hidden-sm hidden-xs">
-                          <button>
-                            <h3>First Slide</h3>
-                            <h2>"Lorem ipsum Duis laboris dolore esse ex et magna nisi nisi culpa mollit velit officia velit magna."</h2>
-                          </button>
-                        </div>
+          <div class="row">
+            <div id="carouselContainer">
+              <div class="col-md-10 col-md-push-1">
+                <div class="row"></div>
+              </div>
+              <div class="carousel slide" id="mainCarousel" data-ride="carousel">
+                <!--CAROUSEL BUTTONS-->
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#mainCarousel" data-slide-to="0"></li>
+                  <li data-target="#mainCarousel" data-slide-to="1"></li>
+                  <li data-target="#mainCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active"><img src="images/weightloss1.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                      <div class="carouselbutton hidden-sm hidden-xs">
+                        <button>
+                          <h3>First Slide</h3>
+                          <h2>"Lorem ipsum Duis laboris dolore esse ex et magna nisi nisi culpa mollit velit officia velit magna."</h2>
+                        </button>
                       </div>
                     </div>
-                    <div class="item"><img src="images/weightloss2.jpg" alt="Second slide">
-                      <div class="carousel-caption">
-                        <div class="col-lg-push-4 col-md-9 col-md-push-3"></div>
-                        <div class="carouselbutton hidden-sm hidden-xs">
-                          <button> 
-                            <h3>Second slide</h3>
-                            <h2>"Lorem ipsum Et pariatur elit elit esse sint dolore commodo consectetur ut non cupidatat."</h2>
-                          </button>
-                        </div>
+                  </div>
+                  <div class="item"><img src="images/weightloss2.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                      <div class="carouselbutton hidden-sm hidden-xs">
+                        <button> 
+                          <h3>Second slide</h3>
+                          <h2>"Lorem ipsum Et pariatur elit elit esse sint dolore commodo consectetur ut non cupidatat."</h2>
+                        </button>
                       </div>
                     </div>
-                    <div class="item"><img src="images/weightloss3.jpg" alt="Third slide">
-                      <div class="carousel-caption">
-                        <div class="col-lg-push-4 col-md-9 col-md-push-3"></div>
-                        <div class="carouselbutton hidden-sm hidden-xs">
-                          <button>
-                            <h3>Third slide</h3>
-                            <h2>"Lorem ipsum Ad exercitation minim enim voluptate veniam pariatur ut cupidatat laborum sint Ut consequat sunt aliquip sit labore."</h2>
-                          </button>
-                        </div>
+                  </div>
+                  <div class="item"><img src="images/weightloss3.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                      <div class="carouselbutton hidden-sm hidden-xs">
+                        <button>
+                          <h3>Third slide</h3>
+                          <h2>"Lorem ipsum Ad exercitation minim enim voluptate veniam pariatur ut cupidatat laborum sint Ut consequat sunt aliquip sit labore."</h2>
+                        </button>
                       </div>
                     </div>
-                  </div><a class="left carousel-control" href="#maincarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#maincarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
+                  </div>
+                </div><a class="left carousel-control" href="#mainCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#mainCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12" id="parallax">
-                <div class="paraText">
-                  <h1>Schedule today!</h1>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12" id="dietInfo">
+              <div class="col-md-4" id="cell1">
+                <h2>What is Ideal Protien?</h2>
+                <h4>Ut magna mollit ut non non dolore ut nisi sint est laborum pariatur esse fugiat aliqua occaecat ut anim non elit duis in fugiat occaecat nostrud sint consequat non ea ea cillum ut amet aliquip adipisicing dolore adipisicing.</h4>
+              </div>
+              <div class="col-md-4" id="cell2">
+                <h2> </h2>
+                <h4>Aliqua ex sunt officia laborum aute esse exercitation mollit elit consectetur ut anim laboris eu reprehenderit sit laborum consectetur dolor non esse ex laborum dolor laboris sint esse veniam velit exercitation non in aute laborum consectetur adipisicing est.tempor.</h4>
+              </div>
+              <div class="col-md-4" id="cell3">
+                <h2>What is Ideal Protien?</h2>
+                <h4>Esse fugiat labore sit ex in cillum nostrud voluptate incididunt enim cillum qui nisi pariatur ut sit nisi proident deserunt qui consectetur aliqua non quis duis dolor velit est mollit adipisicing proident.</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&amp;callback=initMap"></script>
+      <script src="js/jquery-3.2.0.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <!--~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~-->
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <div class="row"> 
-        <div class="col-xs-12" id="footer">
-          <div id="information">
-            <ul class="col-xs-12">
-              <li>ABOUT</li>
-              <li>RESOURCES</li>
-              <li>SOCIAL
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-              </li>
-            </ul>
-          </div>
+        <div class="col-xs-10 col-xs-push-1" id="footer">
+          <table>
+            <thead>
+              <tr>
+                <th class="col-md-1">ABOUT</th>
+                <th class="col-md-1">RESOURCES</th>
+                <th class="col-md-1">SOCIAL</th>
+              </tr>
+              <tr>
+                <td> </td>
+                <td></td>
+                <td>FACEBOOK</td>
+              </tr>
+            </thead>
+          </table>
         </div>
       </div>
     </div>
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <!--~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~-->
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&amp;callback=initMap"></script>
-    <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -5,11 +5,14 @@ $font-stack: 'Raleway'
 	position: relative
 	padding: 0
 
+body
+	background-image: url('http://www.seattleweightlossandwellness.com/wp-content/uploads/2012/10/seattle-background1.jpg')
+	background-attachment: fixed
 //-HEADER BEGINS HERE
 #header
 	background-color: white
 	position: fixed
-	box-shadow: 0 6px 4px -3px black
+	box-shadow: 0 3px 4px -2px black
 	padding: 0px
 	z-index: 99
 	overflow: hidden
@@ -18,21 +21,21 @@ $font-stack: 'Raleway'
 	background: linear-gradient(to right,#8bc34a,#8bc34a, white)
 	z-index: 1
 	height: 5em
+#menudeskbar
+	padding: 0
 #logo
+	padding-top: 7px
 	transition: 0.3s ease
 	z-index: 98
 	&:hover
 		filter: drop-shadow(5px 5px 5px #222)
-#logo img
-	margin: 0px
-#menudeskbar
 	z-index: 99
 	display: block
 .menubutton
 	float: left
 	width: 20%
 .menubutton a
-	color:  black
+	color: black
 
 .menubutton a button
 	background-color: white
@@ -45,38 +48,15 @@ $font-stack: 'Raleway'
 		background-color: #656565
 		box-shadow: 0px 2px 9px 2px black inset
 		color:  #c34a8b
- 
-//-.menubutton a button
-	font-size: 12
-	float: left
-	background-color: white
-	border: none
-	height: 5em
-	width: 20%
-	text-decoration: none
-	transition: .5s
-	&:hover
-		background-color: #656565
-		box-shadow: 0px 2px 9px 2px black inset
-		color:  #c34a8b
-	&:active
-		background-color: black 
-		box-shadow: 0px 2px 9px 0px #8bc34a
-		color: #8bc34a
-		transition: 0s
-	&:focus
-		outline: 0
-//-.menubutton a
 //-CONTENT BEGINS HERE
 #content
-    padding: 0
-    z-index: 1
+	background-color: white
+	margin-top: 5em
+	padding: 0
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //-~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #carouselContainer
-	margin-top: 5em
-#carouselBG
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url(../images/food2.jpg)
     background-position: 20%
     background-size: 120%
@@ -86,8 +66,7 @@ $font-stack: 'Raleway'
 	.active
 		background-color: #c34a8b !important
 .item img
-	width: 50em
-	height: auto
+	margin: auto
 
 .carouselbutton button
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.2)
@@ -119,26 +98,11 @@ $font-stack: 'Raleway'
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
 .carousel-caption p
 	
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//-~~~~~~~~~~~PARALLAXBEGINS HERE~~~~~~~~~~
-#parallax
-	height: 20em
-	background:
-		image: url(../images/IPFood.jpg)
-		size: contain
-		position: top center
-		attachment: fixed
-		background-repeat: no-repeat
-	top: 20%
-	padding-bottom: 10em 
-	margin-top:
-.paraText
-	h1
-		color: white
-		margin-left: 10%
-		font-size: 800%
-		text-align: center
-		z-index: 1
+#dietInfo
+	padding: 2em
+	display: flexbox
+	#cell1
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~MAPS BEGINS HERE~~~~~~~~~~~~
@@ -147,17 +111,18 @@ $font-stack: 'Raleway'
 	background-color: black 
 	height: 20em
 	width: 31.7em
-#ownerPic
-	box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.5) inset
-	height: 40em
-	background-color: white
-#ownerPic img
-	width: 30em
-	height: auto
-#ownerInfo
-	height: 40em
-	background-color: green
 //FOOTER BEGINS HERE
 #footer
-	border-top: 1px solid black
-	height: 10em
+	background-color: grey
+	height: 30em
+#footer table
+	margin: 0 auto
+	thead
+		tr
+			text-align: center
+			th
+				text-align: center
+
+//give all major elements background shadow
+.bgShadow
+	box-shadow: 0px 2px 9px 2px black

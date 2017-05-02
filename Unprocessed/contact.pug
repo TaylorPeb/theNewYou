@@ -1,0 +1,17 @@
+extends _layout.pug
+block content	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	.row
+		#content.col-md-10.col-md-push-1.col-xs-10.col-xs-push-1
+			#contact-box
+				
+				#map
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&callback=initMap")
+	script(src='js/jquery-3.2.0.min.js')
+	script(src='js/bootstrap.min.js')
+	script(src='js/scripts.js')
