@@ -6,6 +6,7 @@ $font-stack: 'Raleway'
 	padding: 0
 
 body
+	overflow-x: hidden
 	background-image: url('http://www.seattleweightlossandwellness.com/wp-content/uploads/2012/10/seattle-background1.jpg')
 	background-attachment: fixed
 //-HEADER BEGINS HERE
@@ -27,10 +28,9 @@ body
 	padding-top: 7px
 	transition: 0.3s ease
 	z-index: 98
+	display: block
 	&:hover
 		filter: drop-shadow(5px 5px 5px #222)
-	z-index: 99
-	display: block
 .menubutton
 	float: left
 	width: 20%
@@ -52,7 +52,6 @@ body
 #content
 	background-color: white
 	margin-top: 5em
-	padding: 0
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //-~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,17 +90,19 @@ body
 			transform: translate(20px 20px)
 	&:focus
 		outline: 0
-.carousel-caption
-
-.carouselbutton button h2
 .carousel-caption h3
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
-.carousel-caption p
 	
 #dietInfo
 	padding: 2em
 	display: flexbox
+	.cellButton
+		float: right
 	#cell1
+		img
+			width: 11em
+			height: auto
+			float: right
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,13 +117,14 @@ body
 	background-color: grey
 	height: 30em
 #footer table
-	margin: 0 auto
+	margin: 3em auto
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
 	thead
 		tr
 			text-align: center
 			th
 				text-align: center
-
-//give all major elements background shadow
-.bgShadow
-	box-shadow: 0px 2px 9px 2px black
+//.wrapperShadow
+	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(0, 0, 0, 1.0), -12px 0 15px -4px rgba(0, 0, 0, 1.0)

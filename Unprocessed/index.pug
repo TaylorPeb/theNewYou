@@ -4,14 +4,12 @@ block content
 	//~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	.row
-		#content.col-md-10.col-md-push-1.col-xs-10.col-xs-push-1
+		#content.col-md-10.col-md-push-1.col-xs-12
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			//~~~~~~~~~~~~~~CAROUSEL~~~~~~~~~~~~~
 			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 			.row
-				#carouselContainer
-					.col-md-10.col-md-push-1
-						.row
+				#carouselContainer.wrapperShadow
 					#mainCarousel.carousel.slide(data-ride='carousel')
 						//CAROUSEL BUTTONS
 						ol.carousel-indicators
@@ -45,16 +43,23 @@ block content
 						a.right.carousel-control(href='#mainCarousel', data-slide='next')
 							span.glyphicon.glyphicon-chevron-right
 			.row
-				#dietInfo.col-xs-12
+				#dietInfo.col-xs-12.wrapperShadow
 					#cell1.col-md-4
-						h2 What is Ideal Protien?
-						h4 Ut magna mollit ut non non dolore ut nisi sint est laborum pariatur esse fugiat aliqua occaecat ut anim non elit duis in fugiat occaecat nostrud sint consequat non ea ea cillum ut amet aliquip adipisicing dolore adipisicing.
+						h2 <b>What is Ideal Protein?</b>
+						img.hidden-sm.hidden-xs(src='images/logo-ideal-protein.png')
+						h4 Ideal Protien is a diet that follows the rules to achieving and maintaining ketosis. Ketosis influences the body to burn fat as a common fuel source instead of carbohydrates to achive weight loss in a manner that will not decrease muscle mass.
+							button.cellButton
+								p Click Here
 					#cell2.col-md-4
-						h2 
+						h2 <b>Is it your first visit?</b>
 						h4 Aliqua ex sunt officia laborum aute esse exercitation mollit elit consectetur ut anim laboris eu reprehenderit sit laborum consectetur dolor non esse ex laborum dolor laboris sint esse veniam velit exercitation non in aute laborum consectetur adipisicing est.tempor.
+							button.cellButton
+								p Click Here
 					#cell3.col-md-4
-						h2 What is Ideal Protien?
+						h2 <b>Meet your coach!</b>
 						h4 Esse fugiat labore sit ex in cillum nostrud voluptate incididunt enim cillum qui nisi pariatur ut sit nisi proident deserunt qui consectetur aliqua non quis duis dolor velit est mollit adipisicing proident.
+							button.cellButton
+								p Click Here
 	//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	//-~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~
 	//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
