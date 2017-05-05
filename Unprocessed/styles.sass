@@ -4,15 +4,20 @@ $font-stack: 'Raleway'
 	font-family: $font-stack
 	position: relative
 	padding: 0
-
+#bgShadow.col-xs-12
 body
 	overflow-x: hidden
-	background-image: url('http://www.seattleweightlossandwellness.com/wp-content/uploads/2012/10/seattle-background1.jpg')
+	background-image: url('../images/background1.jpg')
 	background-attachment: fixed
+	background-position: top center
+	background-repeat: no-repeats
+	background-size: cover
+.container-fluid
+	margin: 0em 0em 2em 0em
+	box-shadow: 0px 0px 17px 8px rgba(0,0,0,0.75)
 //-HEADER BEGINS HERE
 #header
-	background-color: white
-	position: fixed
+	background-color: #9C27B0
 	box-shadow: 0 3px 4px -2px black
 	padding: 0px
 	z-index: 99
@@ -22,11 +27,12 @@ body
 	background: linear-gradient(to right,#8bc34a,#8bc34a, white)
 	z-index: 1
 	height: 5em
-#menudeskbar
+#mdbar
 	padding: 0
+#mmmbar
 #logo
-	padding-top: 7px
-	transition: 0.3s ease
+	padding-top: 1px
+	transition: 0.1s linear
 	z-index: 98
 	display: block
 	&:hover
@@ -35,23 +41,25 @@ body
 	float: left
 	width: 20%
 .menubutton a
-	color: black
+	color: white
 
 .menubutton a button
-	background-color: white
+	background-color: #9C27B0
 	width: 100%
 	height: 5em
-	transition: 0.5s
+	transition: 0.2s linear
 	border: none
 	&:focus
 	&:hover
-		background-color: #656565
+		background-color: #d05ce3
 		box-shadow: 0px 2px 9px 2px black inset
-		color:  #c34a8b
+		color:  black
 //-CONTENT BEGINS HERE
 #content
 	background-color: white
-	margin-top: 5em
+.landing
+	text-align: center
+	padding: 2em
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //-~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,11 +71,12 @@ body
 	border-color: black !important
 .carousel-indicators
 	.active
-		background-color: #c34a8b !important
+		background-color: #64dd17 !important
 .item img
 	margin: auto
 
 .carouselbutton button
+	border-radius: 1em
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.2)
 	border: none
 	text-decoration: none
@@ -94,15 +103,28 @@ body
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
 	
 #dietInfo
+	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75)
+	h2
+		color: black
+	h4
+		color: black
+	background-color: white
 	padding: 2em
-	display: flexbox
-	.cellButton
+	.cButton
+		background-color: grey
+		border: none
 		float: right
-	#cell1
+
+	.cell
+		overflow: auto
+		transition: 0.2s linear
 		img
 			width: 11em
 			height: auto
 			float: right
+		&:hover
+			background-color: black
+		&:active
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,15 +136,16 @@ body
 	width: 31.7em
 //FOOTER BEGINS HERE
 #footer
-	background-color: grey
-	height: 30em
+	background-color: #3D3D3D
+	height: 10em
 #footer table
-	margin: 3em auto
+	margin: 2em auto
 	position: absolute
 	left: 50%
 	transform: translateX(-50%)
 	thead
 		tr
+			color: white
 			text-align: center
 			th
 				text-align: center
