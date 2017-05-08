@@ -9,47 +9,75 @@ html
 		link(href='css/styles.css', rel='stylesheet')
 		link(href='css/bootstrap.min.css' rel='stylesheet')
 	body
-		.container-fluid.col-md-10.col-md-push-1
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			.row
-					#header.col-md-12.col-xs-12
-						//-#banner.col-md-4.col-xs-4
-						#logo.col-md-2.col-xs-3
-								a(href='index.html')
+		.wrapper
+			.container-fluid.col-md-10.col-md-push-1
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				.row
+						#header.col-md-12.col-xs-12
+							//-#banner.col-md-4.col-xs-4
+							#logo.col-md-2.col-xs-6
+									//a(href='index.html')
 									img(src='images/logo.png' )
-						#mmbar.hidden-lg.hidden-md.col-xs-2.col-xs-push-8
-							p meme
-						#mdbar.col-md-6.col-md-push-4.col-sm-5.col-sm-push-3.col-xs-6.col-xs-push-2.hidden-sm.hidden-xs
-							.menubutton 
-								a(href="index.html") 
-									button <b>HOME</b>
-							.menubutton
-								a(href="advocates.html") 
-									button <b>ADVOCATES</b>
-							.menubutton
-								a(href="contact.html")
-									button <b>CONTACT</b>
-							.menubutton
-								a(href="schedule.html")
-									button <b>SCHEDULE</b>
-							.menubutton 
-								a(href="register.html") 
-									button <b>REGISTER</b>
-			block content
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
-			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			.row 
-				#footer.col-md-12.col-xs-12
-					table
-						thead
-							tr
-								th.col-md-3 ABOUT
-								th.col-md-3 RESOURCES
-								th.col-md-3 SOCIAL
-							tr
-								td 
-								td
-								td FACEBOOK
+							.mmbar.hidden-lg.hidden-md
+								//h3 MENU
+								.hambar
+								.hambar
+								.hambar
+							#mdbar.col-md-6.hidden-sm.hidden-xs
+								.menubutton 
+									a(href="index.html") 
+										button <b>HOME</b>
+								.menubutton
+									a(href="advocates.html") 
+										button <b>ADVOCATES</b>
+								.menubutton
+									a(href="contact.html")
+										button <b>CONTACT</b>
+								.menubutton
+									a(href="schedule.html")
+										button <b>SCHEDULE</b>
+								.menubutton 
+									a(href="register.html") 
+										button <b>REGISTER</b>
+				block content
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
+				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				.row 
+					#footer.col-md-12.col-xs-12
+						table
+							thead
+								tr
+									th.col-md-3 ABOUT
+									th.col-md-3 RESOURCES
+									th.col-md-3 SOCIAL
+								tr
+									td 
+									td
+									td FACEBOOK
+			nav.hidden-lg.hidden-md
+				ul
+					li 
+						a(href="index.html") 
+							button <b>HOME</b>
+					li 
+						a(href="advocates.html") 
+							button <b>ADVOCATES</b>
+					li
+						a(href="contact.html")
+							button <b>CONTACT</b>
+					li 
+						a(href="schedule.html")
+							button <b>SCHEDULE</b>
+					li
+						a(href="register.html") 
+							button <b>REGISTER</b>
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		//~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~
+		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&callback=initMap")
+		script(src='js/jquery-3.2.0.min.js')
+		script(src='js/bootstrap.min.js')
+		script(src='js/scripts.js')

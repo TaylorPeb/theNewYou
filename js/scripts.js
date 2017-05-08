@@ -10,10 +10,17 @@ window.onload = function() {
     }
 }
 */
+
  $(document).ready(function() {
 
+  $(".mmbar").on("click", function() {
+    $(".wrapper .container-fluid").toggleClass("rev")
+    console.log("complete");
+  });
 
- //retrieves window height
+  $('.noselect').on('dragstart', function(event) { event.preventDefault(); 
+    console.log("test");
+  });
 
 /*
 setInterval(function(){

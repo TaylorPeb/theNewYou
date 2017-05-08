@@ -13,10 +13,18 @@ body
 	background-repeat: no-repeats
 	background-size: cover
 .container-fluid
+	z-index: 1
 	margin: 0em 0em 2em 0em
 	box-shadow: 0px 0px 17px 8px rgba(0,0,0,0.75)
+	transition: 0.2s ease
+.rev
+	transform: translateX(-200px)
+	.hambar:nth-child(1)
+		background-color: green
 //-HEADER BEGINS HERE
 #header
+	display: flex
+	justify-content: space-between
 	background-color: #9C27B0
 	box-shadow: 0 3px 4px -2px black
 	padding: 0px
@@ -29,17 +37,65 @@ body
 	height: 5em
 #mdbar
 	padding: 0
-#mmmbar
+
+.mmbar
+	padding: 0px 20px 0px 0px
+	position: absolute
+	right: 0
+	top: 50%
+	transform: translateY(-50%)
+	cursor: pointer
+	.hambar
+		margin: 9px 0px 9px 0px
+		height: 6px
+		width: 45px
+		border-radius: 5px
+		background-color: white
+nav
+	background-color: #282828
+	top: 0
+	right: 0
+	z-index: 0
+	width: 200px
+	height: 100%
+	position: absolute
+	ul
+		li
+			height: 5em
+			width: 100%
+			margin: 1px 0px 0px 0px
+			list-style-type: none
+			color: #282828
+			a
+				height: 5em
+				width: 100%
+				button
+					color: #fff
+					background-color: #282828
+					font-size: 2em
+					border: 1px solid black
+					width: 100%
+					height: 100%
+					border: none
+
+
 #logo
-	padding-top: 1px
 	transition: 0.1s linear
 	z-index: 98
-	display: block
 	&:hover
 		filter: drop-shadow(5px 5px 5px #222)
+	img
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		height: auto
+		max-width: 12em
+
 .menubutton
 	float: left
 	width: 20%
+
 .menubutton a
 	color: white
 
@@ -49,17 +105,19 @@ body
 	height: 5em
 	transition: 0.2s linear
 	border: none
-	&:focus
 	&:hover
 		background-color: #d05ce3
 		box-shadow: 0px 2px 9px 2px black inset
 		color:  black
+
 //-CONTENT BEGINS HERE
 #content
 	background-color: white
+
 .landing
 	text-align: center
 	padding: 2em
+
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //-~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,12 +125,16 @@ body
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url(../images/food2.jpg)
     background-position: 20%
     background-size: 120%
+
 .carousel-indicators li
 	border-color: black !important
+
 .carousel-indicators
 	.active
 		background-color: #64dd17 !important
+
 .item img
+	user-select: none
 	margin: auto
 
 .carouselbutton button
@@ -99,17 +161,21 @@ body
 			transform: translate(20px 20px)
 	&:focus
 		outline: 0
+
 .carousel-caption h3
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
 	
 #dietInfo
 	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75)
 	h2
+		user-select: none
 		color: black
 	h4
+		user-select: none
 		color: black
 	background-color: white
 	padding: 2em
+
 	.cButton
 		background-color: grey
 		border: none
@@ -122,9 +188,6 @@ body
 			width: 11em
 			height: auto
 			float: right
-		&:hover
-			background-color: black
-		&:active
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -134,10 +197,12 @@ body
 	background-color: black 
 	height: 20em
 	width: 31.7em
+
 //FOOTER BEGINS HERE
 #footer
 	background-color: #3D3D3D
 	height: 10em
+
 #footer table
 	margin: 2em auto
 	position: absolute
@@ -149,5 +214,6 @@ body
 			text-align: center
 			th
 				text-align: center
+
 //.wrapperShadow
 	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 12px 0 15px -4px rgba(0, 0, 0, 1.0), -12px 0 15px -4px rgba(0, 0, 0, 1.0)

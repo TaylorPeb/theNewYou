@@ -10,71 +10,92 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid col-md-10 col-md-push-1">
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div class="row">
-        <div class="col-md-12 col-xs-12" id="header">
-          <div class="col-md-2 col-xs-3" id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-          <div class="hidden-lg hidden-md col-xs-2 col-xs-push-8" id="mmbar">
-            <p>meme</p>
-          </div>
-          <div class="col-md-6 col-md-push-4 col-sm-5 col-sm-push-3 col-xs-6 col-xs-push-2 hidden-sm hidden-xs" id="mdbar">
-            <div class="menubutton"> <a href="index.html"> 
-                <button><b>HOME</b></button></a></div>
-            <div class="menubutton"><a href="advocates.html"> 
-                <button><b>ADVOCATES</b></button></a></div>
-            <div class="menubutton"><a href="contact.html">
-                <button><b>CONTACT</b></button></a></div>
-            <div class="menubutton"><a href="schedule.html">
-                <button><b>SCHEDULE</b></button></a></div>
-            <div class="menubutton"> <a href="register.html"> 
-                <button><b>REGISTER</b></button></a></div>
-          </div>
-        </div>
-      </div>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div class="row">
-        <div class="col-md-12" id="content">
-          <div class="row">
-            <div id="contactL">
-              <h2 class="landing">CONTACT</h2>
+    <div class="wrapper">
+      <div class="container-fluid col-md-10 col-md-push-1">
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="row">
+          <div class="col-md-12 col-xs-12" id="header">
+            <div class="col-md-2 col-xs-6" id="logo">
+              <!--a(href='index.html')--><img src="images/logo.png">
+            </div>
+            <div class="mmbar hidden-lg hidden-md">
+              <!--h3 MENU-->
+              <div class="hambar"></div>
+              <div class="hambar"></div>
+              <div class="hambar"></div>
+            </div>
+            <div class="col-md-6 hidden-sm hidden-xs" id="mdbar">
+              <div class="menubutton"> <a href="index.html"> 
+                  <button><b>HOME</b></button></a></div>
+              <div class="menubutton"><a href="advocates.html"> 
+                  <button><b>ADVOCATES</b></button></a></div>
+              <div class="menubutton"><a href="contact.html">
+                  <button><b>CONTACT</b></button></a></div>
+              <div class="menubutton"><a href="schedule.html">
+                  <button><b>SCHEDULE</b></button></a></div>
+              <div class="menubutton"> <a href="register.html"> 
+                  <button><b>REGISTER</b></button></a></div>
             </div>
           </div>
-          <div class="row"></div>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~CONTENT OF BODY~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="row">
+          <div class="col-md-12" id="content">
+            <div class="row">
+              <div id="contactL">
+                <h2 class="landing">CONTACT</h2>
+              </div>
+            </div>
+            <div class="row"></div>
+          </div>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="row"> 
+          <div class="col-md-12 col-xs-12" id="footer">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col-md-3">ABOUT</th>
+                  <th class="col-md-3">RESOURCES</th>
+                  <th class="col-md-3">SOCIAL</th>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td></td>
+                  <td>FACEBOOK</td>
+                </tr>
+              </thead>
+            </table>
+          </div>
         </div>
       </div>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&amp;callback=initMap"></script>
-      <script src="js/jquery-3.2.0.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/scripts.js"></script>
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~-->
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div class="row"> 
-        <div class="col-md-12 col-xs-12" id="footer">
-          <table>
-            <thead>
-              <tr>
-                <th class="col-md-3">ABOUT</th>
-                <th class="col-md-3">RESOURCES</th>
-                <th class="col-md-3">SOCIAL</th>
-              </tr>
-              <tr>
-                <td> </td>
-                <td></td>
-                <td>FACEBOOK</td>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </div>
+      <nav class="hidden-lg hidden-md">
+        <ul>
+          <li> <a href="index.html"> 
+              <button><b>HOME</b></button></a></li>
+          <li> <a href="advocates.html"> 
+              <button><b>ADVOCATES</b></button></a></li>
+          <li><a href="contact.html">
+              <button><b>CONTACT</b></button></a></li>
+          <li> <a href="schedule.html">
+              <button><b>SCHEDULE</b></button></a></li>
+          <li><a href="register.html"> 
+              <button><b>REGISTER</b></button></a></li>
+        </ul>
+      </nav>
     </div>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--~JQUERY/BOOTSTRAP/JAVASCRIPT INIT/GOODLE MAPS API~~-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArjJG-OMCm9egSScqgDBBICffwsco67d4&amp;callback=initMap"></script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

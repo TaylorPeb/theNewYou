@@ -12,10 +12,25 @@ body {
   background-size: cover; }
 
 .container-fluid {
+  z-index: 1;
   margin: 0em 0em 2em 0em;
-  box-shadow: 0px 0px 17px 8px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0px 0px 17px 8px rgba(0, 0, 0, 0.75);
+  transition: 0.2s ease; }
+
+.rev {
+  -webkit-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  transform: translateX(-200px); }
+  .rev .hambar:nth-child(1) {
+    background-color: green; }
 
 #header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #9C27B0;
   box-shadow: 0 3px 4px -2px black;
   padding: 0px;
@@ -26,14 +41,63 @@ body {
 #mdbar {
   padding: 0; }
 
+.mmbar {
+  padding: 0px 20px 0px 0px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer; }
+  .mmbar .hambar {
+    margin: 9px 0px 9px 0px;
+    height: 6px;
+    width: 45px;
+    border-radius: 5px;
+    background-color: white; }
+
+nav {
+  background-color: #282828;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 200px;
+  height: 100%;
+  position: absolute; }
+  nav ul li {
+    height: 5em;
+    width: 100%;
+    margin: 1px 0px 0px 0px;
+    list-style-type: none;
+    color: #282828; }
+    nav ul li a {
+      height: 5em;
+      width: 100%; }
+      nav ul li a button {
+        color: #fff;
+        background-color: #282828;
+        font-size: 2em;
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+        border: none; }
+
 #logo {
-  padding-top: 1px;
   transition: 0.1s linear;
-  z-index: 98;
-  display: block; }
+  z-index: 98; }
   #logo:hover {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); }
+  #logo img {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    max-width: 12em; }
 
 .menubutton {
   float: left;
@@ -72,6 +136,10 @@ body {
   background-color: #64dd17 !important; }
 
 .item img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   margin: auto; }
 
 .carouselbutton button {
@@ -107,8 +175,16 @@ body {
   background-color: white;
   padding: 2em; }
   #dietInfo h2 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: black; }
   #dietInfo h4 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     color: black; }
   #dietInfo .cButton {
     background-color: grey;
@@ -121,8 +197,6 @@ body {
       width: 11em;
       height: auto;
       float: right; }
-    #dietInfo .cell:hover {
-      background-color: black; }
 
 #map {
   background-color: black;
