@@ -11,11 +11,16 @@ window.onload = function() {
 }
 */
 
- $(document).ready(function() {
+$(document).ready(function() {
 
-  $(".mmbar").on("click", function() {
-    $(".wrapper .container-fluid").toggleClass("rev")
-    console.log("complete");
+  $(".mmbar").click(function() {
+    if($(".container-fluid").hasClass("rev")){
+      $(".container-fluid").removeClass("rev");
+      $(".container-fluid").addClass("clo");
+    } else {
+      $(".container-fluid").addClass("rev");
+      $(".container-fluid").removeClass("clo");
+    }
   });
 
   $('.noselect').on('dragstart', function(event) { event.preventDefault(); 

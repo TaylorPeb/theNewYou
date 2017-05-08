@@ -1,5 +1,44 @@
 $font-stack: 'Raleway'
 
+@keyframes topBar-rev
+	0% 
+		transform: none
+	50%
+		transform: translateY(16px)
+	100%
+		transform: translateY(16px) rotate(45deg)
+@keyframes topBar-clo
+	0% 
+		transform: translateY(16px) rotate(45deg)
+	50%
+		transform: translateY(16px)
+	100%
+		transform: translateY(0px)
+@keyframes midBar-rev
+	0% 
+		opacity: 1
+	100%
+		opacity: 0
+@keyframes midBar-clo
+	0% 
+		opacity: 0
+	100%
+		opacity: 1
+@keyframes botBar-rev
+	0% 
+		transform: none
+	50%
+		transform: translateY(-16px)
+	100%
+		transform: translateY(-16px) rotate(-45deg)
+@keyframes botBar-clo
+	0% 
+		transform: translateY(-16px) rotate(-45deg)
+	50%
+		transform: translateY(-16px)
+	100%
+		transform: none
+
 *
 	font-family: $font-stack
 	position: relative
@@ -16,11 +55,37 @@ body
 	z-index: 1
 	margin: 0em 0em 2em 0em
 	box-shadow: 0px 0px 17px 8px rgba(0,0,0,0.75)
-	transition: 0.2s ease
+	transition: 0.5s ease
 .rev
 	transform: translateX(-200px)
 	.hambar:nth-child(1)
-		background-color: green
+		animation-name: topBar-rev
+		animation-duration: 0.6s
+		animation-fill-mode: forwards
+	.hambar:nth-child(2)
+		animation-name: midBar-rev
+		animation-duration: 0.6s
+		animation-fill-mode: forwards
+	.hambar:nth-child(3)
+		animation-name: botBar-rev
+		animation-duration: 0.6s
+		animation-fill-mode: forwards
+
+.clo
+	.hambar:nth-child(1)
+		animation-name: topBar-clo
+		animation-duration: 0.6s
+		animation-fill-mode: forwards
+	.hambar:nth-child(2)
+		animation-name: midBar-clo
+		animation-duration: 0.6s
+		animation-fill-mode: forwards
+
+	.hambar:nth-child(3)
+		animation-name: botBar-clo
+		animation-duration: 0.6s
+		animation-fill-mode: forwards
+
 //-HEADER BEGINS HERE
 #header
 	display: flex
