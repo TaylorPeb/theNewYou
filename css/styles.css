@@ -45,24 +45,40 @@
 @-webkit-keyframes midBar-rev {
   0% {
     opacity: 1; }
+  45% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
   100% {
     opacity: 0; } }
 
 @keyframes midBar-rev {
   0% {
     opacity: 1; }
+  45% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes midBar-clo {
   0% {
     opacity: 0; }
+  45% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
 @keyframes midBar-clo {
   0% {
     opacity: 0; }
+  45% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
@@ -134,6 +150,8 @@ body {
   -ms-transform: translateX(-200px);
   transform: translateX(-200px); }
   .rev .hambar:nth-child(1) {
+    -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+    animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
     -webkit-animation-name: topBar-rev;
     animation-name: topBar-rev;
     -webkit-animation-duration: 0.6s;
@@ -148,6 +166,8 @@ body {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .rev .hambar:nth-child(3) {
+    -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+    animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
     -webkit-animation-name: botBar-rev;
     animation-name: botBar-rev;
     -webkit-animation-duration: 0.6s;
@@ -156,6 +176,8 @@ body {
     animation-fill-mode: forwards; }
 
 .clo .hambar:nth-child(1) {
+  -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+  animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
   -webkit-animation-name: topBar-clo;
   animation-name: topBar-clo;
   -webkit-animation-duration: 0.6s;
@@ -172,6 +194,8 @@ body {
   animation-fill-mode: forwards; }
 
 .clo .hambar:nth-child(3) {
+  -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+  animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
   -webkit-animation-name: botBar-clo;
   animation-name: botBar-clo;
   -webkit-animation-duration: 0.6s;

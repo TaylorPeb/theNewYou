@@ -1,5 +1,8 @@
 $font-stack: 'Raleway'
-
+$bezier: .39,-1,.6,1.71
+// Hamburger menu animation duration
+$hamTime: 0.6s
+//the great burger animations
 @keyframes topBar-rev
 	0% 
 		transform: none
@@ -17,11 +20,19 @@ $font-stack: 'Raleway'
 @keyframes midBar-rev
 	0% 
 		opacity: 1
+	45%
+		opacity: 1
+	50%
+		opacity: 0
 	100%
 		opacity: 0
 @keyframes midBar-clo
 	0% 
 		opacity: 0
+	45%
+		opacity: 0
+	50%
+		opacity: 1
 	100%
 		opacity: 1
 @keyframes botBar-rev
@@ -59,31 +70,35 @@ body
 .rev
 	transform: translateX(-200px)
 	.hambar:nth-child(1)
+		animation-timing-function: cubic-bezier($bezier)
 		animation-name: topBar-rev
-		animation-duration: 0.6s
+		animation-duration: $hamTime
 		animation-fill-mode: forwards
 	.hambar:nth-child(2)
 		animation-name: midBar-rev
-		animation-duration: 0.6s
+		animation-duration: $hamTime
 		animation-fill-mode: forwards
 	.hambar:nth-child(3)
+		animation-timing-function: cubic-bezier($bezier)
 		animation-name: botBar-rev
-		animation-duration: 0.6s
+		animation-duration: $hamTime
 		animation-fill-mode: forwards
 
 .clo
 	.hambar:nth-child(1)
+		animation-timing-function: cubic-bezier($bezier)
 		animation-name: topBar-clo
-		animation-duration: 0.6s
+		animation-duration: $hamTime
 		animation-fill-mode: forwards
 	.hambar:nth-child(2)
 		animation-name: midBar-clo
-		animation-duration: 0.6s
+		animation-duration: $hamTime
 		animation-fill-mode: forwards
 
 	.hambar:nth-child(3)
+		animation-timing-function: cubic-bezier($bezier)
 		animation-name: botBar-clo
-		animation-duration: 0.6s
+		animation-duration: $hamTime
 		animation-fill-mode: forwards
 
 //-HEADER BEGINS HERE
