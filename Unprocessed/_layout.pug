@@ -1,62 +1,62 @@
 doctype html
 html
 	head
-		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale:1, user-scalable=no')
 		html(lang='en')
-		meta(name='viewport' content='width=device-width, initial-scale=1')
 		meta(charset="utf-8")
 		link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
 		link(href='css/styles.css', rel='stylesheet')
 		link(href='css/bootstrap.min.css' rel='stylesheet')
 	body
-		.wrapper
-			.container-fluid.col-md-10.col-md-push-1
-				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-				//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
-				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-				.row
-						#header.col-md-12.col-xs-12
-							//-#banner.col-md-4.col-xs-4
-							#logo.col-md-2.col-xs-6
-									//a(href='index.html')
+		.container-fluid.col-md-10.col-md-push-1
+			.drape
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~~HEAD OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			.row
+					#header.col-md-12.col-xs-12
+						//-#banner.col-md-4.col-xs-4
+						#logo.col-md-2.col-xs-6
+							a(href='index.html')
+								button
 									img(src='images/logo.png' )
-							.mmbar.hidden-lg.hidden-md
-								//h3 MENU
-								.hambar
-								.hambar
-								.hambar
-							#mdbar.col-md-6.hidden-sm.hidden-xs
-								.menubutton 
-									a(href="index.html") 
-										button <b>HOME</b>
-								.menubutton
-									a(href="advocates.html") 
-										button <b>ADVOCATES</b>
-								.menubutton
-									a(href="contact.html")
-										button <b>CONTACT</b>
-								.menubutton
-									a(href="schedule.html")
-										button <b>SCHEDULE</b>
-								.menubutton 
-									a(href="register.html") 
-										button <b>REGISTER</b>
-				block content
-				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-				//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
-				//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-				.row 
-					#footer.col-md-12.col-xs-12
-						table
-							thead
-								tr
-									th.col-md-3 ABOUT
-									th.col-md-3 RESOURCES
-									th.col-md-3 SOCIAL
-								tr
-									td 
-									td
-									td FACEBOOK
+						.mmbar.hidden-lg.hidden-md
+							//h3 MENU
+							.hambar
+							.hambar
+							.hambar
+						#mdbar.col-md-6.hidden-sm.hidden-xs
+							.menubutton 
+								a(href="index.html") 
+									button <b>HOME</b>
+							.menubutton
+								a(href="advocates.html") 
+									button <b>ADVOCATES</b>
+							.menubutton
+								a(href="contact.html")
+									button <b>CONTACT</b>
+							.menubutton
+								a(href="schedule.html")
+									button <b>SCHEDULE</b>
+							.menubutton 
+								a(href="register.html") 
+									button <b>REGISTER</b>
+			block content
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			//~~~~~~~~~~~FOOT OF BODY~~~~~~~~~~~~
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			.row 
+				#footer.col-md-12.col-xs-12
+					table
+						thead
+							tr
+								th.col-md-3 ABOUT
+								th.col-md-3 RESOURCES
+								th.col-md-3 SOCIAL
+							tr
+								td 
+								td
+								td FACEBOOK
 		nav.hidden-lg.hidden-md
 			ul
 				li 

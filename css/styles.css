@@ -150,8 +150,8 @@ body {
   -ms-transform: translateX(-200px);
   transform: translateX(-200px); }
   .rev .hambar:nth-child(1) {
-    -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
-    animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
+    animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
     -webkit-animation-name: topBar-rev;
     animation-name: topBar-rev;
     -webkit-animation-duration: 0.6s;
@@ -166,18 +166,21 @@ body {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .rev .hambar:nth-child(3) {
-    -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
-    animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
+    animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
     -webkit-animation-name: botBar-rev;
     animation-name: botBar-rev;
     -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
+  .rev .drape {
+    z-index: 10;
+    opacity: 0.8; }
 
 .clo .hambar:nth-child(1) {
-  -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
-  animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
   -webkit-animation-name: topBar-clo;
   animation-name: topBar-clo;
   -webkit-animation-duration: 0.6s;
@@ -194,14 +197,25 @@ body {
   animation-fill-mode: forwards; }
 
 .clo .hambar:nth-child(3) {
-  -webkit-animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
-  animation-timing-function: cubic-bezier(0.39, -1, 0.6, 1.71);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
   -webkit-animation-name: botBar-clo;
   animation-name: botBar-clo;
   -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+
+.drape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -10;
+  background-color: white;
+  opacity: 0.0;
+  transition: 0.3s linear; }
 
 #header {
   display: -webkit-flex;
@@ -213,9 +227,24 @@ body {
   background-color: #9C27B0;
   box-shadow: 0 3px 4px -2px black;
   padding: 0px;
-  z-index: 99;
+  z-index: 50;
   overflow: hidden;
   height: 5em; }
+
+.landing {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .landing h2 {
+    padding: 1.5em 0 1.5em 0; }
 
 #mdbar {
   padding: 0; }
@@ -266,17 +295,21 @@ nav {
   transition: 0.1s linear;
   z-index: 98; }
   #logo:hover {
+    cursor: pointer;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); }
-  #logo img {
+  #logo a {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 100%;
-    height: auto;
-    max-width: 12em; }
+    transform: translateY(-50%); }
+    #logo a button {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      height: auto;
+      max-width: 12em; }
 
 .menubutton {
   float: left;
@@ -298,10 +331,6 @@ nav {
 
 #content {
   background-color: white; }
-
-.landing {
-  text-align: center;
-  padding: 2em; }
 
 #carouselContainer {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url(../images/food2.jpg);
@@ -348,6 +377,10 @@ nav {
 
 .carousel-caption h3 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
+
+#conMap {
+  height: 100em;
+  background-color: black; }
 
 #dietInfo {
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);

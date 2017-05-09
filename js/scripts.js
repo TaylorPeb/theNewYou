@@ -13,7 +13,18 @@ window.onload = function() {
 
 $(document).ready(function() {
 
-  $(".mmbar").click(function() {
+/*
+  $(window).scroll(function(){
+    
+    var wScroll = $(this).scrollTop();
+
+    $('.landI').css({
+      'transform' : 'translate(0px, '+  wScroll /-6 +'%)'
+    });
+  });
+*/
+
+  $(".mmbar, .drape").click(function() {
     if($(".container-fluid").hasClass("rev")){
       $(".container-fluid").removeClass("rev");
       $(".container-fluid").addClass("clo");
@@ -26,6 +37,8 @@ $(document).ready(function() {
   $('.noselect').on('dragstart', function(event) { event.preventDefault(); 
     console.log("test");
   });
+
+
 
 /*
 setInterval(function(){

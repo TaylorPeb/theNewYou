@@ -1,5 +1,5 @@
 $font-stack: 'Raleway'
-$bezier: .39,-1,.6,1.71
+$bezier: 0.175, 1, 0.320, 1.275
 // Hamburger menu animation duration
 $hamTime: 0.6s
 //the great burger animations
@@ -62,6 +62,7 @@ body
 	background-position: top center
 	background-repeat: no-repeats
 	background-size: cover
+
 .container-fluid
 	z-index: 1
 	margin: 0em 0em 2em 0em
@@ -83,6 +84,9 @@ body
 		animation-name: botBar-rev
 		animation-duration: $hamTime
 		animation-fill-mode: forwards
+	.drape
+		z-index: 10
+		opacity: 0.8
 
 .clo
 	.hambar:nth-child(1)
@@ -100,7 +104,16 @@ body
 		animation-name: botBar-clo
 		animation-duration: $hamTime
 		animation-fill-mode: forwards
-
+.drape
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	z-index: -10
+	background-color: white
+	opacity: 0.0
+	transition: 0.3s linear
 //-HEADER BEGINS HERE
 #header
 	display: flex
@@ -108,9 +121,19 @@ body
 	background-color: #9C27B0
 	box-shadow: 0 3px 4px -2px black
 	padding: 0px
-	z-index: 99
+	z-index: 50
 	overflow: hidden
 	height: 5em
+//-general landing styles
+.landing
+	display: flex
+	overflow: hidden
+	z-index: 1
+	justify-content: center
+	align-items: center
+	h2
+		padding: 1.5em 0 1.5em 0 
+
 //-#banner
 	background: linear-gradient(to right,#8bc34a,#8bc34a, white)
 	z-index: 1
@@ -163,14 +186,19 @@ nav
 	transition: 0.1s linear
 	z-index: 98
 	&:hover
+		cursor: pointer
 		filter: drop-shadow(5px 5px 5px #222)
-	img
+
+	a
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
-		width: 100%
-		height: auto
-		max-width: 12em
+		button
+			background-color: transparent
+			border: none
+			width: 100%
+			height: auto
+			max-width: 12em
 
 .menubutton
 	float: left
@@ -193,10 +221,6 @@ nav
 //-CONTENT BEGINS HERE
 #content
 	background-color: white
-
-.landing
-	text-align: center
-	padding: 2em
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //-~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
@@ -244,6 +268,9 @@ nav
 
 .carousel-caption h3
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
+#conMap
+	height: 100em
+	background-color: black
 	
 #dietInfo
 	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75)
@@ -268,8 +295,6 @@ nav
 			width: 11em
 			height: auto
 			float: right
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~MAPS BEGINS HERE~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
