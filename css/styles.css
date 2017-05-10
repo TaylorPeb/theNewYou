@@ -154,15 +154,15 @@ body {
     animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
     -webkit-animation-name: topBar-rev;
     animation-name: topBar-rev;
-    -webkit-animation-duration: 0.6s;
-    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .rev .hambar:nth-child(2) {
     -webkit-animation-name: midBar-rev;
     animation-name: midBar-rev;
-    -webkit-animation-duration: 0.6s;
-    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .rev .hambar:nth-child(3) {
@@ -170,8 +170,8 @@ body {
     animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
     -webkit-animation-name: botBar-rev;
     animation-name: botBar-rev;
-    -webkit-animation-duration: 0.6s;
-    animation-duration: 0.6s;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
   .rev .drape {
@@ -183,16 +183,16 @@ body {
   animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
   -webkit-animation-name: topBar-clo;
   animation-name: topBar-clo;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
 .clo .hambar:nth-child(2) {
   -webkit-animation-name: midBar-clo;
   animation-name: midBar-clo;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
@@ -201,10 +201,13 @@ body {
   animation-timing-function: cubic-bezier(0.175, 1, 0.32, 1.275);
   -webkit-animation-name: botBar-clo;
   animation-name: botBar-clo;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
+
+.clo .drape {
+  opacity: 0.0; }
 
 .drape {
   position: absolute;
@@ -215,7 +218,7 @@ body {
   z-index: -10;
   background-color: white;
   opacity: 0.0;
-  transition: 0.3s linear; }
+  transition: 0.8s ease; }
 
 #header {
   display: -webkit-flex;
@@ -392,7 +395,10 @@ nav {
     -ms-user-select: none;
     user-select: none;
     color: black; }
+  #dietInfo h3 {
+    font-size: 1.5em; }
   #dietInfo h4 {
+    text-indent: 1em;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

@@ -1,7 +1,7 @@
 $font-stack: 'Raleway'
 $bezier: 0.175, 1, 0.320, 1.275
 // Hamburger menu animation duration
-$hamTime: 0.6s
+$hamTime: 0.8s
 //the great burger animations
 @keyframes topBar-rev
 	0% 
@@ -104,6 +104,8 @@ body
 		animation-name: botBar-clo
 		animation-duration: $hamTime
 		animation-fill-mode: forwards
+	.drape
+		opacity: 0.0
 .drape
 	position: absolute
 	left: 0
@@ -113,7 +115,7 @@ body
 	z-index: -10
 	background-color: white
 	opacity: 0.0
-	transition: 0.3s linear
+	transition: 0.8s ease
 //-HEADER BEGINS HERE
 #header
 	display: flex
@@ -274,14 +276,18 @@ nav
 	
 #dietInfo
 	box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75)
+	background-color: white
+	padding: 2em
 	h2
 		user-select: none
 		color: black
+	h3
+
+		font-size: 1.5em
 	h4
+		text-indent: 1em
 		user-select: none
 		color: black
-	background-color: white
-	padding: 2em
 
 	.cButton
 		background-color: grey
