@@ -337,6 +337,16 @@ nav {
 #content {
   background-color: white; }
 
+.cateCell {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .cateCell .catePho {
+    margin-top: 20px;
+    height: 10em;
+    background-color: #79C1F0; }
+  .cateCell .cateInfo {
+    color: #3E3E3E; }
+
 #carouselContainer {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.5) 100%), url(../images/food2.jpg);
   background-position: 20%;
