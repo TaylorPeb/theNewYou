@@ -1,3 +1,4 @@
+$textColor: #2D2D2D
 $font-stack: 'Raleway'
 $bezier: 0.175, 1, 0.320, 1.275
 // Hamburger menu animation duration
@@ -172,7 +173,6 @@ nav
 			width: 100%
 			margin: 1px 0px 0px 0px
 			list-style-type: none
-			color: #282828
 			a
 				height: 5em
 				width: 100%
@@ -220,21 +220,26 @@ nav
 	&:hover
 		background-color: #d05ce3
 		box-shadow: 0px 2px 9px 2px black inset
-		color:  black
+		color:  $textColor
 
 //-CONTENT BEGINS HERE
 #content
 	background-color: white
+	.catePho:nth-child(1)
 
 .cateCell
 	margin-top: 10px
 	margin-bottom: 10px
 	.catePho
 		margin-top: 20px
-		height: 10em
-		background-color: #79C1F0
+		img
+			width: 100%
+			height: auto
 	.cateInfo
-		color: #3E3E3E
+		color: $textColor
+		h3
+			@media screen and (max-width: 992px)
+				font-size: 1.7em
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //-~~~~~~~~~~CAROUSEL BEGINS HERE~~~~~~~~~~
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -262,7 +267,7 @@ nav
 	//border-radius: 5px
 	//margin-bottom: 100px
 	height: auto
-	color: black
+	color: $textColor
 	background-color: rgba(255,255,255,0.5)
 	padding: 10px
 	transition: all 0.3s ease-in-out
@@ -273,7 +278,7 @@ nav
 		transition: 0s
 		box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3) inset
 		background-color: rgba(255,255,255,0.6)
-		color: black
+		color: $textColor
 		h3, h2
 			transform: translate(20px 20px)
 
@@ -284,7 +289,7 @@ nav
 	background-color: black
 	
 #dietInfo
-	color: #3F3F3F
+	color: $textColor
 	background-color: white
 	padding: 2em
 	h2
@@ -299,7 +304,9 @@ nav
 	.cButton
 		box-shadow: 10px 10px 14px 0px rgba(50, 50, 50, 0.2)
 		border-radius: 20px
+		font-weight: bold
 		font-size: 3em
+		color: white
 		width: 100%
 		height: 2em
 		border: none
@@ -321,13 +328,17 @@ nav
 .bCell
 	padding-bottom: 1em
 	button
+		color: white
+		font-weight: bold
 		box-shadow: 13px 13px 30px 0px rgba(0, 0, 0, 0.3)
 		border-radius: 3px
-		background-color: #ccff90
+		//background-color: rgba(118, 255, 3, 1)
+		background-color: #9C27B0
 		border: none
 		width: 100%
 		height: 8em
 		overflow: hidden
+		transition: 0.3s ease
 		&:before
 			transform: translate(20%, 80%)
 			border-radius: 80%
@@ -335,10 +346,13 @@ nav
 			position: absolute
 			width: 130%
 			height: 280%
-			background-color: #9C27B0
+			background-color: #76ff03
 			transition: 0.5s ease
 		&:hover:before
 			transform: translate(-45%,-44%)
+		&:hover
+			transition-delay: 0.1s
+			color: $textColor
 		p
 			font-size: 3em
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
