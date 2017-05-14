@@ -1,4 +1,9 @@
 // Test to see if jQuery is working
+
+//var touches = event.touches.length;
+
+
+
 /*
 window.onload = function() {
     if (window.jQuery) {  
@@ -24,6 +29,13 @@ $(document).ready(function() {
   });
 */
 
+  if($(window).width() <= 992) {
+    console.log("meme");
+    $(".catePho.col-md-4:nth-child(2) .cateImg2").remove();
+    $(".catePho.col-md-4:nth-child(2)").remove();
+    //$(".cateCell:nth-child(2)").append("<div class="catePho col-md-4"></div>");
+    //$(".catePho.col-md-4:nth-child(2)").prepend("<div class="catePho col-md-4"><img id="cateImg2" src="images/weightloss1.jpg"></div>");
+  }
   $(".mmbar, .drape").click(function() {
     if($(".container-fluid").hasClass("rev")){
       $(".container-fluid").removeClass("rev");

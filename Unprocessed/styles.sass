@@ -137,7 +137,7 @@ body
 	justify-content: center
 	align-items: center
 	h2
-		padding: 1.5em 0 1.5em 0 
+		padding: 2em 0 2em 0 
 
 //-#banner
 	background: linear-gradient(to right,#8bc34a,#8bc34a, white)
@@ -227,14 +227,23 @@ nav
 	background-color: white
 	.catePho:nth-child(1)
 
+.cate-wrapper
+	margin-bottom: 3em
+	display: inline-block
 .cateCell
 	margin-top: 10px
 	margin-bottom: 10px
 	.catePho
 		margin-top: 20px
 		img
+			border-radius: 10px
+			//padding-left: 20px
 			width: 100%
 			height: auto
+			@media screen and (max-width: 992px)
+				padding-left: 0px
+				background-color: black
+
 	.cateInfo
 		color: $textColor
 		h3

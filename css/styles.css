@@ -249,7 +249,7 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   .landing h2 {
-    padding: 1.5em 0 1.5em 0; }
+    padding: 2em 0 2em 0; }
 
 #mdbar {
   padding: 0; }
@@ -336,14 +336,23 @@ nav {
 #content {
   background-color: white; }
 
+.cate-wrapper {
+  margin-bottom: 3em;
+  display: inline-block; }
+
 .cateCell {
   margin-top: 10px;
   margin-bottom: 10px; }
   .cateCell .catePho {
     margin-top: 20px; }
     .cateCell .catePho img {
+      border-radius: 10px;
       width: 100%;
       height: auto; }
+      @media screen and (max-width: 992px) {
+        .cateCell .catePho img {
+          padding-left: 0px;
+          background-color: black; } }
   .cateCell .cateInfo {
     color: #2D2D2D; }
     @media screen and (max-width: 992px) {
