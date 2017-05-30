@@ -293,10 +293,29 @@ nav
 
 .carousel-caption h3
 	text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
+.con-wrapper
+	height: 30em
 #conMap
-	height: 100em
-	background-color: black
-	
+	float: left
+.divider
+	transform: rotate(90deg)
+	height: 3px
+.divider:before
+	content: ""
+	position: absolute
+	height: 3px
+	margin: 0 15em
+	width: 30em
+	left: 50%
+	transform: translateX(-50%)
+	background-image: linear-gradient(to right, transparent, rgb(64,64,64), transparent)
+.info-wrapper
+	width: 500px
+	float: right
+	padding: 0 5em 0 0
+	@media screen and (max-width: 1300px) 
+		width: 400px
+#contact
 #dietInfo
 	color: $textColor
 	background-color: white

@@ -403,9 +403,37 @@ nav {
 .carousel-caption h3 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
 
+.con-wrapper {
+  height: 30em; }
+
 #conMap {
-  height: 100em;
-  background-color: black; }
+  float: left; }
+
+.divider {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  height: 3px; }
+
+.divider:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  margin: 0 15em;
+  width: 30em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-image: linear-gradient(to right, transparent, #404040, transparent); }
+
+.info-wrapper {
+  width: 500px;
+  float: right;
+  padding: 0 5em 0 0; }
+  @media screen and (max-width: 1300px) {
+    .info-wrapper {
+      width: 400px; } }
 
 #dietInfo {
   color: #2D2D2D;
