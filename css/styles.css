@@ -144,8 +144,10 @@ body {
 .container-fluid {
   z-index: 1;
   margin: 0em 0em 2em 0em;
-  box-shadow: 0px 0px 17px 8px rgba(0, 0, 0, 0.75);
-  transition: 0.5s ease; }
+  box-shadow: 0px 0px 17px 8px rgba(0, 0, 0, 0.75); }
+  @media screen and (max-width: 992px) {
+    .container-fluid {
+      transition: 0.5s ease; } }
 
 .rev {
   -webkit-transform: translateX(-200px);
@@ -403,23 +405,34 @@ nav {
 .carousel-caption h3 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
 
-.con-wrapper {
-  height: 30em; }
-
 #conMap {
   float: left; }
+  @media screen and (max-width: 992px) {
+    #conMap {
+      width: 100%;
+      float: none; } }
+  #conMap img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px; }
 
 .divider {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   height: 3px; }
+  @media screen and (max-width: 992px) {
+    .divider {
+      opacity: 0; } }
 
 .divider:before {
   content: "";
   position: absolute;
   height: 3px;
-  margin: 0 15em;
+  margin: 0 14em;
   width: 30em;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -427,31 +440,21 @@ nav {
   transform: translateX(-50%);
   background-image: linear-gradient(to right, transparent, #404040, transparent); }
 
-.info-wrapper {
-  width: 500px;
-  float: right;
-  padding: 0 5em 0 0; }
-  @media screen and (max-width: 1300px) {
-    .info-wrapper {
-      width: 400px; } }
+@media screen and (max-width: 1300px) {
+  .info-wrapper {
+    text-align: center; } }
+
+#contact {
+  margin: 2em 0 0 0; }
 
 #dietInfo {
   color: #2D2D2D;
   background-color: white;
   padding: 2em; }
-  #dietInfo h2 {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
   #dietInfo h3 {
     font-size: 1.5em; }
   #dietInfo h4 {
-    text-indent: 1em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
+    text-indent: 1em; }
   #dietInfo .cButton {
     box-shadow: 10px 10px 14px 0px rgba(50, 50, 50, 0.2);
     border-radius: 20px;
