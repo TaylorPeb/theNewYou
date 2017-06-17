@@ -32,9 +32,9 @@ $(document).ready(function() {
 setInterval(function(){
 
   if($(window).width() <= 991) {
-    console.log("dank");
+    console.log("test");
   } else  if($(window).width() >= 991) {
-    console.log("meme");
+    console.log("test");
   }
   }, 3000);
 
